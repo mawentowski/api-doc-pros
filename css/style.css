@@ -35,7 +35,7 @@ body {
     padding-left: 50px; } }
 .services-container {
   padding-top: 45px;
-  padding-bottom: 32px; }
+  padding-bottom: 5px; }
 
 .videoWrapper {
   position: relative;
@@ -54,6 +54,17 @@ body {
 
 .card {
   margin-bottom: 60px; }
+
+#services .service-card h5 {
+  color: gray; }
+
+#services .card-hover:hover {
+  background-color: #3292a6; }
+  #services .card-hover:hover .service-title,
+  #services .card-hover:hover .card-text {
+    color: white; }
+  #services .card-hover:hover .service-card h5 {
+    color: lightgrey; }
 
 #samples .card-img-overlay {
   color: transparent; }

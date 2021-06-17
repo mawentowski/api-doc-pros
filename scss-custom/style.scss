@@ -52,7 +52,7 @@ body {
 
 .services-container {
   padding-top: 45px;
-  padding-bottom: 32px;
+  padding-bottom: 5px;
 }
 
 .videoWrapper {
@@ -75,6 +75,21 @@ body {
 
 .card {
   margin-bottom: 60px;
+}
+
+#services .service-card h5 {
+  color: gray;
+}
+
+#services .card-hover:hover {
+  background-color: $primary;
+  .service-title,
+  .card-text {
+    color: white;
+  }
+  .service-card h5 {
+    color: lightgrey;
+  }
 }
 
 #samples .card-img-overlay {
