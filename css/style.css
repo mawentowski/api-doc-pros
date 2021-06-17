@@ -55,13 +55,15 @@ body {
 .card {
   margin-bottom: 60px; }
 
-#samples .card.card-hover:hover {
-  background: rgba(0, 0, 0, 0.7); }
-  #samples .card.card-hover:hover .hover-overlay {
-    background: rgba(0, 0, 0, 0.7); }
+#samples .card-img-overlay {
+  color: transparent; }
 
-#showcase ul figure a:hover img {
-  opacity: 0.2; }
+#samples a:hover .card-img-overlay {
+  color: #17a2b8; }
+#samples a:hover .card-img-overlay .card-text {
+  font-weight: 600; }
+#samples a:hover img {
+  opacity: 0.3; }
 
 #main-footer {
   background: #000;
