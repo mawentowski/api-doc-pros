@@ -1,0 +1,104 @@
+$primary: #3292a6;
+// Need to RGBA for opacity, the A is opacity at the end
+$primary-overlay: rgba(50, 146, 166, 0.8);
+
+body {
+  margin-top: 75px;
+}
+
+#home .nav-link {
+  font-size: 1.1rem;
+  padding-right: 1.7rem;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+#showcase {
+  position: relative;
+  min-height: 577px;
+}
+
+.carousel-image-1 {
+  background: url(../img/image1.jpg) 0% 0% / cover;
+}
+
+.carousel-image-2 {
+  background: url(../img/image2.jpg) 0% 0% / cover;
+}
+
+.carousel-item {
+  height: 510px;
+}
+
+.carousel-caption.carousel-caption-bottom-override {
+  margin-bottom: 3rem;
+}
+
+.carousel-caption {
+  margin-bottom: 6rem;
+}
+
+.info-inner.container {
+  margin-bottom: 75px;
+}
+
+@media (min-width: 992px) {
+  .info-description {
+    padding-left: 50px;
+  }
+}
+
+.services-container {
+  padding-top: 45px;
+  padding-bottom: 32px;
+}
+
+.icon-holder {
+  margin-top: -40px;
+}
+
+.card {
+  margin-bottom: 60px;
+}
+
+.card.card-hover:hover {
+  background-color: #3292a6;
+  p,
+  .service-title {
+    color: white;
+  }
+}
+
+// these are from mizuke
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+/* not sure what below is */
+/* @media (min-width: 1200px)
+  {
+  h3.service-title {
+  }
+} */
+
+/* .fa, .fas {
+  font-weight: 900;
+}
+
+.fa, .far, .fas {
+  font-family: Font Awesome\ 5 Free;
+}
+
+.fa, .fab, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+} */

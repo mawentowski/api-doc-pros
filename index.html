@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap Theme</title>
+</head>
+
+  <body id="home" data-spy="scroll" data-target="#main-nav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-2 b-" id="main-nav">
+      <div class="container">
+        <a href="#home" class="navbar-brand">
+          <img src="img/mlogo.png" width="50" height="50" alt="">
+          <h5 class="d-inline align-middle">DocOps Solutions NL</h5>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services-link" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#samples-nav-link" class="nav-link">Doc Site Samples</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right">
+                <h1 class="display-3">DocOps Solutions NL</h1>
+                <p class="lead">Technical writing services and documentation automation solutions company<br>based the Netherlands, serving a global client-base.
+                </p>
+                <a href="#" class="btn btn-danger btn-lg">Learn More</a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption-bottom-override carousel-caption d-none d-sm-block">
+              <h1 class="display-3">10 Reasons Why API Documentation Fails</h1>
+              <p class="lead">Our take on Gias Uddin and Martin P. Robillard's paper for IEEE<br>that investigates 10 common documentation problems that hurt company image<br>and dissuade developers from using you APIs.</p>
+              <a href="#" class="btn btn-primary btn-lg">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  
+<section id="info mb-15">
+  <div class="info-inner container">
+    <div class="row">
+      <div class="col-lg-6 info-video">
+        <iframe width="560" height="320" src="https://www.youtube.com/embed/5pzhtrrtkXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- 
+        <img class="img-fluid" src="https://source.unsplash.com/random/455x318" alt="Unsplash Image"> -->
+      </div>
+      <div class="info-description col-lg-6">
+          <h1 class="">Who We Are</h1>
+          <p class="">We are developers and writers that apply the tools, practices, and mindset of software development to  modernize our client’s documentation to scale with their products.</p>
+          <h1 class="">What We Deliver</h1>
+          <p class="">We specialize in automating the migration of legacy content into new systems, extending the capabilities of existing tools, and creating custom solutions where necessary to meet the client’s specific needs.
+          </p>
+      </div>
+    </div>
+    <a id="services-link"></a>
+  </div>
+  
+</section>
+
+<div id="services-header">
+  <div class="container-fluid bg-dark text-white text-center">
+    <div class="row">
+      <div class="col-6 mx-auto my-4">
+        <div class="display-3">Services</div>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio hic suscipit illum magni eius?</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- for some reason, I cannot apply margin using mb-4 units or in the CSS
+      using a numberless unit either, have to use pixels in CSS, why? -->
+
+
+<section id="services">
+  <div class="services-container container">
+    <!-- <div class="row">
+
+      <div class="col-6 text-center info-header mx-auto">
+        <h1 class="text-primary mb-4">Services</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, mollitia.</p>
+      </div>
+    </div> -->
+    <div class="row text-center mt-5 align-s"> 
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-hover ">
+          <div class="container">
+            <div class="row">
+              <div class="icon-holder col-xs-4 mx-auto p-3 mb-1 bg-light w-30 border rounded-circle">
+              <img class="img-fluid" style="" src="https://img.icons8.com/ios-glyphs/60/000000/code.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 card-body person-card">
+            <h3 class="service-title">Technical Writing</h3>
+            <h5 class="text-muted">for APIs</h5>
+            <p class="card-text">including contextual documentation to cover topics such as getting started guides, API authentication, rate limiting, etc.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-hover">
+
+
+
+
+          <div class="container">
+            <div class="row">
+              <div class="icon-holder col-xs-4 mx-auto p-3 mb-1 bg-light w-30 border rounded-circle">
+            <!-- <a href="https://icons8.com/icon/61026/robot">Robot icon by Icons8</a> -->
+            <img class="img-fluid" style="" src="https://img.icons8.com/ios-glyphs/60/000000/robot.png"/>
+            <!-- <i class="fad fa-conveyor-belt" style="color:black"></i> -->
+          <!-- <img src="../mizuxe copy/img/person2.jpg" alt="" class="card-image-top rounded-circle person-img"> -->
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="card-body person-card">
+            <h3 class="service-title">Automating migration</h3>
+            <h5 class="text-muted">of legacy content</h5>
+            <p class="card-text pb-1">from systems like Confluence into Headless CMSs that promote collaboration and feedback from non-technical users.
+            </p>
+          </div>
+
+
+
+          
+          <!-- <div class="d-flex justify-content-center">
+            <i class="fab fa-facebook m-4"></i>
+            <i class="fab fa-twitter m-4"></i>
+            <i class="fab fa-instagram m-4"></i>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-hover">
+          <div class="container">
+            <div class="row">
+              <div class="icon-holder col-xs-4 mx-auto p-3 mb-1 bg-light w-30 border rounded-circle">
+            <!-- <a href="https://icons8.com/icon/69913/slider">Slider icon by Icons8</a> -->
+            <img class="img-fluid" style="" src="https://img.icons8.com/ios-glyphs/60/000000/sorting-options.png"/>
+          <!-- <img src="../mizuxe copy/img/person3.jpg" alt="" class="card-image-top rounded-circle person-img"> -->
+              </div>
+            </div>
+          </div>
+          <div class="card-body person-card">
+
+            <h3 class="service-title">Extending Tooling</h3>
+            <h5 class="text-muted">for custom solutions</h5>
+            <p class="card-text pb-1">that meet the client's specific needs like extending markdown or developing tools that render the OpenAPI Spec.
+            </p>
+          </div>
+          <!-- <div class="d-flex justify-content-center">
+            <i class="fab fa-facebook m-4"></i>
+            <i class="fab fa-twitter m-4"></i>
+            <i class="fab fa-instagram m-4"></i>
+          </div> -->
+        </div>
+      </div>
+
+      
+
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-hover">
+
+          <div class="container">
+            <div class="row">
+              <div class="icon-holder col-xs-4 mx-auto p-3 mb-1 bg-light w-30 border rounded-circle">
+            <!-- <a href="https://icons8.com/icon/60657/design">Design icon by Icons8</a> -->
+            <img class="img-fluid" src="https://img.icons8.com/ios-glyphs/60/000000/design.png"/>
+          <!-- <img src="../mizuxe copy/img/person4.jpg" alt="" class="card-image-top rounded-circle person-img"> -->
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="card-body person-card">
+
+            <h3 class="service-title">Design & Develop </h3>
+            <h5 class="text-muted">doc site templates</h5>
+            <p class="card-text pb-1">that match company branding, styling, tone of voice -- including the stylization of Swagger output.
+            </p>
+          </div>
+          <!-- <div class="d-flex justify-content-center">
+            <i class="fab fa-facebook m-4"></i>
+            <i class="fab fa-twitter m-4"></i>
+            <i class="fab fa-instagram m-4"></i>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card card-hover">
+          <div class="container">
+            <div class="row">
+              <!-- col-4 works on each -->
+              <div class="icon-holder col-xs-4 mx-auto p-3 mb-1 bg-light w-30 border rounded-circle">
+                <!-- <a href="https://icons8.com/icon/60710/test-tube">Test Tube icon by Icons8</a> -->
+                <img class="img-fluid" style="" src="https://img.icons8.com/ios-glyphs/60/000000/test-tube.png"/>
+
+
+                <!-- <a href="https://icons8.com/icon/60657/design">Design icon by Icons8</a> -->
+                <!-- <img style="margin-top:-43px;" src="https://img.icons8.com/ios-glyphs/60/000000/design.png"/> -->
+              <!-- <img src="../mizuxe copy/img/person4.jpg" alt="" class="card-image-top rounded-circle person-img"> -->
+              </div>
+            </div>
+          </div>
+          <div class="card-body person-card">
+            <h3 class="service-title">Testing</h3>
+            <h5 class="text-muted">API docs</h5>
+            <p class="card-text">using text servers, local builds, or sample apps to send requests and vet the documents step-by-step.
+            </p>
+          </div>
+          <!-- <div class="d-flex justify-content-center">
+            <i class="fab fa-facebook m-4"></i>
+            <i class="fab fa-twitter m-4"></i>
+            <i class="fab fa-instagram m-4"></i>
+          </div> -->
+        </div>
+      </div>
+    </div><a id="samples-nav-link"></a>
+    </div>
+   
+      
+      
+    
+  </div>
+  
+</section>
+
+<section id="samples-header">
+  <div class="container-fluid bg-dark text-white text-center">
+    <div class="row">
+      <div class="col-6 mx-auto my-4">
+        <div class="display-3">Doc Site Samples</div>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio hic suscipit illum magni eius?</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="samples">
+  <div class="container samples-container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="img/mountains.jpg" alt="">
+          <div class="card-img-overlay text-white">
+            <h4 class="card-img-hover-text card-title">Card title</h4>
+            <p class="card-img-hover-text card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+            <!-- <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </p> -->
+          </div>
+          <div class="card-body">
+              <h4 class="card-title">Card title that wraps to a new line</h4>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                  is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+            <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+          <div class="card-body">
+              <h4 class="card-title">Card title that wraps to a new line</h4>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                  is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+            <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+          <div class="card-body">
+              <h4 class="card-title">Card title that wraps to a new line</h4>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                  is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ABOUT / WHY SECTION -->
+  <section id="about" class="py-5 text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <!-- if you need border-botton, then you have to go into the CSS -->
+            <h1 class="text-primary pb-3">
+              Why This Book?
+            </h1>
+            <p class="lead pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati alias rerum dolore fugiat debitis?
+            </p>
+          </div>
+
+          <!-- ACCORDION -->
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <!-- take away margin -->
+                <h5 class="mb-0">
+                  <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fas fa-arrow-circle-down"></i> Get Inspired
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse1" class="collapse show">
+                <div class="card-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia
+                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
+                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti
+                  facilis consequatur tenetur nam pariatur fuga nisi!
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fas fa-arrow-circle-down"></i> Gain The Knowledge
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse2" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia
+                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
+                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti
+                  facilis consequatur tenetur nam pariatur fuga nisi!
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fas fa-arrow-circle-down"></i> Open Your Mind
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse3" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia
+                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
+                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti
+                  facilis consequatur tenetur nam pariatur fuga nisi!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<section id="contact">
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h2>Get in Touch</h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, sequi.</p>
+          <form>
+            <!-- Add -lg to elements to make them span across container 
+            Always declare the primary class first -->
+            <div class="input-group input-group-lg mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i>
+                </span>
+              </div>  
+              <input type="text" placeholder="Name" class="form-control">
+            </div>
+
+            <div class="input-group input-group-lg mb-4">
+              <div class="input-group-prepend">
+                <!-- Think about the type of element needed, if it needs to be inline you cannot use a div, so you need a span -->
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+                <input type="email" placeholder="Email" class="form-control">
+            </div>
+
+            <div class="input-group input-group-lg mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+              </div>
+              <textarea class="form-control" name="" id="" placeholder="Message" rows="5"></textarea>
+            </div>
+      <!-- Think about the w-100 in terms of percentages, 100% of container -->
+            <button class="btn btn-primary btn-lg w-100">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-3 align-self-center">
+          <img src="../mizuxe copy/img/mlogo.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 ml-auto">
+          <p class="lead">
+            Copyright &copy;
+            <span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- 
+    nav element needs a class of nav, you need to tell it to expand,
+    you need to say background color, text color, and is fixed top
+    also it needs to be transparent...
+    a container needs to wrap everything
+    there is a navbar-brand with an image inside with text
+    next is the toggle. you need to data-toggle is collapse
+    data-target - give ID of div that contains the UL
+    there needs to be a div that is navbar navbar-collapse. this div needs to ml-auto to push it to the right.
+    the ul is 
+
+    Mizuxe
+    Home
+    About
+    Meet the Authors
+    Contact
+
+   -->
+
+
+
+
+
+
+
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+   crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+   crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+ <!-- THIS IS FOR THE CAROUSEL -->
+ <script>
+
+   // Get the current year for the copyright
+   $('#year').text(new Date().getFullYear());
+
+   // Configure Slider
+   $('.carousel').carousel({
+     interval: 5000,
+     pause: 'hover'
+   });
+
+   // Lightbox Init
+   $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+     event.preventDefault();
+     $(this).ekkoLightbox();
+   });
+
+   // Video Play
+   $(function () {
+     // Auto play modal video
+     $(".video").click(function () {
+       var theModal = $(this).data("target"),
+         videoSRC = $(this).attr("data-video"),
+         videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+       $(theModal + ' iframe').attr('src', videoSRCauto);
+       $(theModal + ' button.close').click(function () {
+         $(theModal + ' iframe').attr('src', videoSRC);
+       });
+     });
+   });
+
+ </script>
+  
+
+  <!-- THIS IS FOR SCROLL SPY -->
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>
