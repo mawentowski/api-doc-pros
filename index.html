@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +12,13 @@
 </head>
 
   <body id="home" data-spy="scroll" data-target="#main-nav">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-2 b-" id="main-nav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
       <div class="container">
         <a href="#home" class="navbar-brand">
           <img src="img/mlogo.png" width="50" height="50" alt="">
           <h5 class="d-inline align-middle">DocOps Solutions NL</h5>
         </a>
+
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,7 +45,7 @@
       </div>
     </nav>
     
-
+  
   <section id="showcase">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -89,10 +89,10 @@
   <div class="info-inner container">
     <div class="row">
       <div class="col-lg-6 info-video">
-        <iframe width="560" height="320" src="https://www.youtube.com/embed/5pzhtrrtkXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="videoWrapper">
+          <iframe width="560" height="320" src="https://www.youtube.com/embed/5pzhtrrtkXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-<!-- 
-        <img class="img-fluid" src="https://source.unsplash.com/random/455x318" alt="Unsplash Image"> -->
       </div>
       <div class="info-description col-lg-6">
           <h1 class="">Who We Are</h1>
@@ -298,19 +298,31 @@
 </div>
 
 <section id="samples">
-  <div class="container samples-container">
+  <div class="container samples-container py-5">
     <div class="row">
       <div class="col-md-6 col-lg-4">
         <div class="card">
+          <a href="/free-css-templates/page268/training-studio" title="Training Studio Website Template">
           <img class="card-img-top img-fluid" src="img/mountains.jpg" alt="">
-          <div class="card-img-overlay text-white">
+          <div class="card-img-overlay">
+            <h4 id="card-title-overlay card-title-overlay" class="card-img-hover-text card-title">Aida</h4>
+            <p class="card-img-hover-text card-text">View this template >> </p>
+          </div>
+          </a>
+
+
+
+<!-- 
+
+          <img class="card-img-top img-fluid" src="img/mountains.jpg" alt="">
+          <div class="card-img-overlay">
             <h4 class="card-img-hover-text card-title">Card title</h4>
             <p class="card-img-hover-text card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
                 is a little bit longer.</p>
-            <!-- <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </p> -->
           </div>
+ -->
+
+
           <div class="card-body">
               <h4 class="card-title">Card title that wraps to a new line</h4>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
