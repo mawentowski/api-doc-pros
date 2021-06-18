@@ -68,12 +68,23 @@ body {
 .twitter_tweet h5 {
   font-weight: 300;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.77);
+  padding-top: 10px;
 }
 .twitter_tweet i {
   font-size: 30px;
 }
+// #testimonials .fa.fa-twitter {
+//   color: #00bc95;
+// }
 
+h5,
+.h5 {
+  font-size: 1rem;
+}
+
+#testimonials .owl-item {
+  color: #00bc95;
+}
 // #testimonial-item {
 //   color: #00bc95;
 //   text-align: center;
