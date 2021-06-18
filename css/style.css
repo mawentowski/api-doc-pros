@@ -12,10 +12,10 @@ body {
   position: relative;
   min-height: 577px; }
 
-.carousel-image-1 {
+#showcase .carousel-image-1 {
   background: url(../img/image1.jpg) 0% 0%/cover; }
 
-.carousel-image-2 {
+#showcase .carousel-image-2 {
   background: url(../img/image2.jpg) 0% 0%/cover; }
 
 #showcase .carousel-item {
@@ -81,9 +81,6 @@ body {
 
 #samples .card {
   border: none; }
-
-#twitter_tweet {
-  background: url(../images/pattern1.png), url(../images/bg-4.jpg); }
 
 #main-footer {
   background: #000;
