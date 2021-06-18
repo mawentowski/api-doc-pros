@@ -82,6 +82,9 @@ body {
 #samples .card {
   border: none; }
 
+#twitter_tweet {
+  background: url(../images/pattern1.png), url(../images/bg-4.jpg); }
+
 #main-footer {
   background: #000;
   color: #fff; }
