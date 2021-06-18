@@ -40,13 +40,13 @@ body {
   background: url(../img/image2.jpg) 0% 0% / cover;
 }
 
-// #testimonials .carousel-item {
-//   overflow: auto;
-// }
+#testimonials .carousel-item {
+  height: 300px;
+}
 
 #testimonials .carousel-caption {
   color: #00bc95;
-  text-align: center;
+  text-align: left;
 }
 
 // .fa.fa-twitter {
@@ -57,8 +57,37 @@ body {
 // .carousel-inner {
 //   position: relative;
 //   width: 100%;
-//   overflow: auto;
+//   overflow: hidden;
 // }
+
+/* 11 Twitter-tweets
+----------------------------------------------------------------------------- */
+#testimonials {
+  background: url(../img/pattern1.png), url(../img/bg-4.jpg);
+}
+.twitter_tweet h5 {
+  font-weight: 300;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.77);
+}
+.twitter_tweet i {
+  font-size: 30px;
+}
+
+// #testimonial-item {
+//   color: #00bc95;
+//   text-align: center;
+// }
+/* 4 Parallax
+----------------------------------------------------------------------------- */
+.parallax {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 #testimonials .carousel-item {
   min-height: 300px;
