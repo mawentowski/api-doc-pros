@@ -40,18 +40,28 @@ body {
   background: url(../img/image2.jpg) 0% 0% / cover;
 }
 
-#testimonials .carousel-item {
-  height: 300px;
-}
+// #testimonials .carousel-item {
+//   overflow: auto;
+// }
 
 #testimonials .carousel-caption {
   color: #00bc95;
-  text-align: left;
+  text-align: center;
 }
 
-.fa.fa-twitter {
-  width: 59px;
-  height: 30px;
+// .fa.fa-twitter {
+//   width: 59px;
+//   height: 30px;
+// }
+
+// .carousel-inner {
+//   position: relative;
+//   width: 100%;
+//   overflow: auto;
+// }
+
+#testimonials .carousel-item {
+  min-height: 300px;
 }
 
 .carousel-caption.carousel-caption-bottom-override {

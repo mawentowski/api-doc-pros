@@ -27,16 +27,12 @@ body {
 #testimonials .carousel-image-2 {
   background: url(../img/image2.jpg) 0% 0%/cover; }
 
-#testimonials .carousel-item {
-  height: 300px; }
-
 #testimonials .carousel-caption {
   color: #00bc95;
-  text-align: left; }
+  text-align: center; }
 
-.fa.fa-twitter {
-  width: 59px;
-  height: 30px; }
+#testimonials .carousel-item {
+  min-height: 300px; }
 
 .carousel-caption.carousel-caption-bottom-override {
   margin-bottom: 3rem; }
