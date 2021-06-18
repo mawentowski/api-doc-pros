@@ -21,14 +21,37 @@ body {
 #showcase .carousel-item {
   height: 510px; }
 
+#testimonials .carousel-image-1 {
+  background: url(../img/image1.jpg) 0% 0%/cover; }
+
+#testimonials .carousel-image-2 {
+  background: url(../img/image2.jpg) 0% 0%/cover; }
+
 #testimonials .carousel-item {
   height: 300px; }
+
+#testimonials .carousel-caption {
+  color: #00bc95;
+  text-align: left; }
+
+.fa.fa-twitter {
+  width: 59px;
+  height: 30px; }
 
 .carousel-caption.carousel-caption-bottom-override {
   margin-bottom: 3rem; }
 
 .carousel-caption {
   margin-bottom: 6rem; }
+
+#testimonials .carousel-indicators {
+  padding-bottom: 30px; }
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin: 6px;
+  border-radius: 50%; }
 
 .info-inner.container {
   margin-bottom: 75px; }
