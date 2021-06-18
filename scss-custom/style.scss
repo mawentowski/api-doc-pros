@@ -28,8 +28,12 @@ body {
   background: url(../img/image2.jpg) 0% 0% / cover;
 }
 
-.carousel-item {
+#showcase .carousel-item {
   height: 510px;
+}
+
+#testimonials .carousel-item {
+  height: 300px;
 }
 
 .carousel-caption.carousel-caption-bottom-override {
@@ -107,6 +111,18 @@ body {
     opacity: 0.3;
   }
 }
+
+#samples .card {
+  border: none;
+}
+
+// #testimonials .carousel-item {
+//   height: 200px;
+// }
+
+// #samples .card-title {
+//   color: $primary;
+// }
 
 // .twitter_tweet h5 {
 //   font-weight: 300;

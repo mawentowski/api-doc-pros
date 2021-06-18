@@ -18,8 +18,11 @@ body {
 .carousel-image-2 {
   background: url(../img/image2.jpg) 0% 0%/cover; }
 
-.carousel-item {
+#showcase .carousel-item {
   height: 510px; }
+
+#testimonials .carousel-item {
+  height: 300px; }
 
 .carousel-caption.carousel-caption-bottom-override {
   margin-bottom: 3rem; }
@@ -75,6 +78,9 @@ body {
   font-weight: 600; }
 #samples a:hover img {
   opacity: 0.3; }
+
+#samples .card {
+  border: none; }
 
 #main-footer {
   background: #000;
