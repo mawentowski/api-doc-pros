@@ -459,17 +459,10 @@ recreate the reset of delex on your page-->
     </section>
   
     <section id="footer">
-      <!-- you do container fluid to span background across page -->
-      <div class="container-fluid bg-light footer-container">
-        <!-- You are initiating a flexbox to use the justify-content around utility
-        that you cann use on a row 
-        you created a separate footer-container class to add padding to left and right side and override the container-fluid padding (if there is any)
-        -->
-        <div class="d-flex">
-          <!-- you are iniatiing a flex box to simplify the process of centering the divs in the columns-->
+      <div class="container-fluid bg-light footer-wrapper">
+        <div class="row">
           <div class="col-md-6 col-lg-4 d-flex flex-column align-items-center">
             <h4 class="pb-5">KEEP IN TOUCH</h4>
-            <!-- you must create a div to contain inline items -->
             <div id="footer-icons">
               <div class="rounded-circle d-inline-block border border-muted icon-wrapper">
                 <i class="fa fa-facebook footer-icon"></i>
@@ -477,7 +470,6 @@ recreate the reset of delex on your page-->
               <div class="rounded-circle d-inline-block border border-muted icon-wrapper">
                 <i class="fa fa-google-plus footer-icon"></i>
               </div>
-              
               <div class="rounded-circle d-inline-block border border-muted icon-wrapper">
                 <i class="fa fa-twitter footer-icon"></i>
               </div>
@@ -493,17 +485,12 @@ recreate the reset of delex on your page-->
               </p>
             </div>
           </div>
-
-
-
-
           <div class="col-md-6 col-lg-4 d-flex flex-column align-items-center">
             <h4>SUPPORT</h4>
             <div>
               <p class="text-center">
               You need support? Visit our support forum and open tickets for you questions.
               </p>
-
             </div>
             <div>
               <button class="btn btn-primary">Forum</button>
@@ -513,6 +500,14 @@ recreate the reset of delex on your page-->
       </div>
     </section>
     
+    <section id="footer-bottom">
+      <div class="container-fluid bg-dark text-muted">
+        <div class="row">
+          <div class="col text-center"><p>@2021 DocOps Solutions NL. Design by Mark Wentowski</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
    crossorigin="anonymous"></script> -->
