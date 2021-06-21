@@ -260,3 +260,27 @@ h5,
   background: #000;
   color: #fff;
 }
+
+#contact .container.contact-container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+#footer .container.footer-container {
+  // padding-left: 100px;
+  // padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+#footer h4 {
+  font-size: 18px;
+}
+#contact .btn-block {
+  // display: block;
+  width: 30%;
+  // text-align: center;
+}
