@@ -144,10 +144,25 @@ h5,
   padding-left: 115px;
   padding-right: 115px; }
 
-#footer .container.footer-container {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 20px; }
+#footer .d-flex {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+#footer .container-fluid.footer-wrapper {
+  padding-left: 115px;
+  padding-right: 115px; }
+
+#footer-icons .footer-icon {
+  font-size: 20px; }
+
+#footer .border {
+  border: 2px solid #dee2e6 !important;
+  width: 42px;
+  height: 42px;
+  text-align: center; }
+
+#footer .icon-wrapper {
+  padding-top: 7px; }
 
 #footer h4 {
   font-size: 18px; }
