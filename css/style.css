@@ -109,14 +109,14 @@ html {
     line-height: 20px;
     padding-top: 10px; }
 
-#contact .container.contact-container {
+#contact > .container {
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 115px;
   padding-right: 115px; }
-
-#contact .btn-block {
-  width: 30%; }
+#contact .submit-btn-wrapper {
+  margin-top: 15px;
+  text-align: center; }
 
 #footer > .container-fluid {
   padding-top: 100px;
