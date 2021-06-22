@@ -2,7 +2,18 @@ $primary: #3292a6;
 $primary-overlay: rgba(50, 146, 166, 0.8);
 
 html {
-  font-size: 16px;
+  font-size: 10px;
+  // contact and footer section needs to be adjusted here
+  // too much space in footer section need side padding
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media (min-width: 992px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 #home {
   .navbar {
@@ -20,9 +31,9 @@ html {
   position: relative;
 
   .carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    margin: 6px;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0.35rem;
     border-radius: 50%;
   }
   .carousel-image-1 {
@@ -33,16 +44,16 @@ html {
   }
   .carousel-inner {
     .carousel-item {
-      height: 510px;
+      height: 39rem;
     }
     .carousel-item:nth-of-type(1) {
       .carousel-caption {
-        padding-bottom: 7rem;
+        padding-bottom: 10rem;
       }
     }
     .carousel-item:nth-of-type(2) {
       .carousel-caption {
-        padding-bottom: 3rem;
+        padding-bottom: 7rem;
       }
     }
   }
@@ -52,13 +63,13 @@ html {
 
 #info {
   > .container {
-    padding-top: 70px;
-    padding-bottom: 90px;
+    padding-top: 4.4rem;
+    padding-bottom: 5.7rem;
 
     // you must select like this to override
     @media (max-width: 576px) {
       .col-lg-6:nth-of-type(1) {
-        padding-top: 45px;
+        padding-top: 2.8rem;
       }
     }
     .videoWrapper {
@@ -75,17 +86,17 @@ html {
       }
     }
     .info-description {
-      margin-top: 50px;
+      margin-top: 3.1rem;
       text-align: center;
 
       .info-section:nth-of-type(2n) {
-        margin-top: 50px;
-        margin-bottom: 10px;
+        margin-top: 3.1rem;
+        margin-bottom: 0.6rem;
       }
     }
     @media (min-width: 992px) {
       .info-description {
-        padding-left: 70px;
+        padding-left: 4.4rem;
         text-align: left;
       }
     }
@@ -97,21 +108,21 @@ html {
 
 #services-header .container-fluid,
 #portfolio-header .container-fluid {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
 }
 
 // #services
 
 #services {
   > .container {
-    padding-top: 120px;
-    padding-bottom: 40px;
+    padding-top: 7.5rem;
+    padding-bottom: 2.5rem;
   }
   .card {
-    margin-bottom: 60px;
+    margin-bottom: 3.8rem;
     .icon-holder {
-      margin-top: -40px;
+      margin-top: -2.5rem;
     }
     .card-body.service-card h5 {
       color: gray;
@@ -138,14 +149,14 @@ html {
 #portfolio {
   // don't select rows for padding
   > .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 6.3rem;
+    padding-bottom: 6.3rem;
   }
   .card {
     border: none;
     a {
       .card-img-top {
-        padding: 10px;
+        padding: 0.6rem;
       }
       .card-img-overlay {
         // when not hovering, want font transparent
@@ -162,7 +173,7 @@ html {
           padding-top: 30px;
         }
         .card-text {
-          font-weight: 600;
+          font-weight: 1.9rem;
         }
       }
     }
@@ -175,8 +186,8 @@ html {
   background: url(../img/pattern1.png), url(../img/bg-4.jpg);
 
   > .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3.1rem;
+    padding-bottom: 3.1rem;
   }
 
   .owl-item {
@@ -184,13 +195,13 @@ html {
     opacity: 0.7;
   }
   .fa.fa-twitter {
-    font-size: 30px;
+    font-size: 1.9rem;
   }
   h5 {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 20px;
-    padding-top: 10px;
+    line-height: 1.3rem;
+    padding-top: 0.6rem;
   }
 }
 
@@ -199,13 +210,13 @@ html {
 #contact {
   > .container {
     // you cant to mx-auto to fit the columns to their contents. you have to specify a padding left and right to decrease space available. Also dont do offsetting.
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-top: 4.4rem;
+    padding-bottom: 4.4rem;
+    padding-left: 7.2rem;
+    padding-right: 7.2rem;
   }
   .submit-btn-wrapper {
-    margin-top: 15px;
+    margin-top: 0.9rem;
     text-align: center;
   }
 }
@@ -214,24 +225,24 @@ html {
 
 #footer {
   > .container-fluid {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 6.3rem;
+    padding-bottom: 6.3rem;
   }
   h4 {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
 
   #footer-icons {
     .icon-wrapper {
-      padding-top: 7px;
+      padding-top: 0.4rem;
       i {
-        font-size: 20px;
+        font-size: 1.3rem;
       }
     }
     .border {
-      border: 2px solid #dee2e6;
-      width: 42px;
-      height: 42px;
+      border: 0.15rem solid #dee2e6;
+      width: 2.6rem;
+      height: 2.6rem;
       text-align: center;
     }
   }
@@ -240,6 +251,6 @@ html {
 // #footer bottom
 
 #footer-bottom > .container-fluid {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 1.9rem;
+  padding-bottom: 1.3rem;
 }
