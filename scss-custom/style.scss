@@ -217,26 +217,27 @@ html {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  h4 {
+    font-size: 18px;
+  }
+
+  #footer-icons {
+    .icon-wrapper {
+      padding-top: 7px;
+      i {
+        font-size: 20px;
+      }
+    }
+    .border {
+      border: 2px solid #dee2e6;
+      width: 42px;
+      height: 42px;
+      text-align: center;
+    }
+  }
 }
 
-#footer h4 {
-  font-size: 18px;
-}
-
-#footer .icon-wrapper {
-  padding-top: 7px;
-}
-
-#footer .border {
-  border: 2px solid #dee2e6 !important;
-  width: 42px;
-  height: 42px;
-  text-align: center;
-}
-
-#footer-icons .footer-icon {
-  font-size: 20px;
-}
+// #footer bottom
 
 #footer-bottom > .container-fluid {
   padding-top: 30px;
