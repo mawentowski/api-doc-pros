@@ -57,34 +57,23 @@ html {
   padding-top: 35px;
   padding-bottom: 35px; }
 
-#services .services-container.container {
+#services > .container {
   padding-top: 120px;
   padding-bottom: 40px; }
-
-.icon-holder {
-  margin-top: -40px; }
-
-.card {
+#services .card {
   margin-bottom: 60px; }
-
-#services .service-card h5 {
-  color: gray; }
-
-#services .card-hover:hover {
+  #services .card .icon-holder {
+    margin-top: -40px; }
+  #services .card .card-body.service-card h5 {
+    color: gray; }
+#services .card:hover {
   background-color: #3292a6; }
-  #services .card-hover:hover .service-title,
-  #services .card-hover:hover .card-text {
+  #services .card:hover .service-title,
+  #services .card:hover .card-text {
     color: white; }
-  #services .card-hover:hover .service-card h5 {
-    color: lightgrey; }
-
-h5,
-.h5 {
-  font-size: 1rem; }
-
-#portfolio-header > .container-fluid {
-  padding-top: 35px;
-  padding-bottom: 35px; }
+  #services .card:hover .service-card h5 {
+    color: lightgrey;
+    font-size: 1rem; }
 
 #portfolio .card-img-overlay {
   color: transparent; }

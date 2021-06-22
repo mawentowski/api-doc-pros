@@ -55,6 +55,7 @@ html {
     padding-top: 70px;
     padding-bottom: 90px;
 
+    // you must select like this to override
     @media (max-width: 576px) {
       .col-lg-6:nth-of-type(1) {
         padding-top: 45px;
@@ -92,6 +93,7 @@ html {
 }
 
 // #services-header
+// you must select like this to override
 
 #services-header .container-fluid,
 #portfolio-header .container-fluid {
@@ -101,47 +103,37 @@ html {
 
 // #services
 
-#services .services-container.container {
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
-
-.icon-holder {
-  margin-top: -40px;
-}
-
-.card {
-  margin-bottom: 60px;
-}
-
-#services .service-card h5 {
-  color: gray;
-}
-
-#services .card-hover:hover {
-  background-color: $primary;
-  .service-title,
-  .card-text {
-    color: white;
+#services {
+  > .container {
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
-  .service-card h5 {
-    color: lightgrey;
+  .card {
+    margin-bottom: 60px;
+    .icon-holder {
+      margin-top: -40px;
+    }
+    .card-body.service-card h5 {
+      color: gray;
+    }
+  }
+  // you have to separate the pseudo class not cascade
+  .card:hover {
+    background-color: $primary;
+    .service-title,
+    .card-text {
+      color: white;
+    }
+    .service-card h5 {
+      color: lightgrey;
+      font-size: 1rem;
+    }
   }
 }
 
-h5,
-.h5 {
-  font-size: 1rem;
-}
-
-// #samples-header
+// #portfolio-header
 
 // #portfolio
-
-#portfolio-header > .container-fluid {
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
 
 #portfolio .card-img-overlay {
   color: transparent;
