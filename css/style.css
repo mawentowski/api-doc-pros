@@ -75,21 +75,23 @@ html {
     color: lightgrey;
     font-size: 1rem; }
 
-#portfolio .card-img-overlay {
-  color: transparent; }
-
-#portfolio a:hover .card-img-overlay {
-  color: #17a2b8; }
-#portfolio a:hover .card-img-overlay .card-text {
-  font-weight: 600; }
-#portfolio a:hover img {
-  opacity: 0.3; }
-
+#portfolio > .container {
+  padding-top: 100px;
+  padding-bottom: 100px; }
 #portfolio .card {
   border: none; }
-
-#portfolio .card-img-overlay {
-  color: transparent; }
+  #portfolio .card a .card-img-top {
+    padding: 10px; }
+  #portfolio .card a .card-img-overlay {
+    color: transparent; }
+  #portfolio .card a:hover img {
+    opacity: 0.3; }
+  #portfolio .card a:hover .card-img-overlay {
+    color: #17a2b8; }
+    #portfolio .card a:hover .card-img-overlay .card-title {
+      padding-top: 30px; }
+    #portfolio .card a:hover .card-img-overlay .card-text {
+      font-weight: 600; }
 
 #testimonials {
   background: url(../img/pattern1.png), url(../img/bg-4.jpg); }
