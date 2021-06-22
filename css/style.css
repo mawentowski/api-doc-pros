@@ -1,3 +1,6 @@
+html {
+  font-size: 16px; }
+
 #home .navbar {
   padding-top: 0.8rem; }
 #home .nav-link {
@@ -5,14 +8,12 @@
   padding-right: 1.7rem; }
 
 #showcase {
-  position: relative;
-  min-height: 577px; }
-
-.carousel-indicators li {
-  width: 12px;
-  height: 12px;
-  margin: 6px;
-  border-radius: 50%; }
+  position: relative; }
+  #showcase .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+    border-radius: 50%; }
 
 #showcase .carousel-image-1 {
   background: url(../img/image1.jpg) 0% 0%/cover; }
@@ -29,24 +30,30 @@
 .carousel-caption.carousel-caption-bottom-override {
   margin-bottom: 3rem; }
 
-.info-inner.container {
-  margin-bottom: 75px; }
-
-.videoWrapper {
+#info > .container {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+#info .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
   height: 0; }
-
-.videoWrapper iframe {
+#info .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
-
+#info .info-description {
+  margin-top: 50px;
+  text-align: center; }
+  #info .info-description .info-section:nth-of-type(2n) {
+    margin-top: 50px;
+    margin-bottom: 10px; }
 @media (min-width: 992px) {
-  .info-description {
-    padding-left: 50px; } }
+  #info .info-description {
+    padding-left: 70px;
+    text-align: left; } }
+
 #services-header .container-fluid {
   padding-top: 35px;
   padding-bottom: 35px; }
