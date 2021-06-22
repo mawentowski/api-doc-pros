@@ -95,25 +95,19 @@ html {
 
 #testimonials {
   background: url(../img/pattern1.png), url(../img/bg-4.jpg); }
-
-#testimonials .carousel-item {
-  height: 300px; }
-
-#testimonials .owl-item {
-  color: white;
-  opacity: 0.7; }
-
-.twitter_tweet i {
-  font-size: 30px; }
-
-.twitter_tweet h5 {
-  font-weight: 300;
-  line-height: 20px;
-  padding-top: 10px; }
-
-h5,
-.h5 {
-  font-size: 1rem; }
+  #testimonials > .container {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  #testimonials .owl-item {
+    color: white;
+    opacity: 0.7; }
+  #testimonials .fa.fa-twitter {
+    font-size: 30px; }
+  #testimonials h5 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 20px;
+    padding-top: 10px; }
 
 #contact .container.contact-container {
   padding-top: 70px;
