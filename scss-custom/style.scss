@@ -276,7 +276,7 @@ html {
 }
 
 // #services
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #services > .container {
     padding-right: 60px;
     padding-left: 60px;
@@ -396,7 +396,7 @@ html {
 // #contact
 
 #contact {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .container {
       padding-left: 2rem;
       padding-right: 2rem;
@@ -428,7 +428,7 @@ html {
     .row:nth-of-type(1) {
       margin-bottom: 8px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .row:nth-of-type(2) {
         .input-group {
           margin-top: 1.5rem;
@@ -440,7 +440,7 @@ html {
 
 // #footer
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #footer > .container-fluid {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -459,7 +459,7 @@ html {
       font-size: 1.2rem;
       text-transform: uppercase;
     }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       .row > {
         .d-flex:nth-of-type(1) {
           h4 {
