@@ -41,6 +41,19 @@ html {
   //   }
   // }
 
+  font-size: 10px;
+  // contact and footer section needs to be adjusted here
+  // too much space in footer section need side padding
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media (min-width: 992px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
+
   .carousel-indicators li {
     width: 0.75rem;
     height: 0.75rem;
@@ -67,7 +80,7 @@ html {
     @media (max-width: 768px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
-          padding-bottom: 7rem;
+          padding-bottom: 4rem;
         }
       }
       .carousel-item:nth-of-type(2) {
@@ -79,25 +92,30 @@ html {
     @media (min-width: 768px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
-          padding-bottom: 10rem;
+          padding-bottom: 8rem;
         }
       }
       .carousel-item:nth-of-type(2) {
         .carousel-caption {
-          padding-bottom: 7rem;
+          padding-bottom: 8rem;
         }
       }
     }
 
+    // @media (max-width: 768px) {
+    //   .carousel-caption {
+    //     padding-bottom: 7rem;
+    //   }
+    // }
     @media (max-width: 768px) {
-      .carousel-caption {
-        padding-bottom: 7rem;
-      }
-    }
-    @media (max-width: 768px) {
-      .carousel-caption {
+      .carousel-caption:nth-of-type(1) {
         .display-3 {
-          font-size: 3.8rem;
+          font-size: 3.8em;
+        }
+      }
+      .carousel-caption:nth-of-type(1) {
+        .display-3 {
+          font-size: 3em;
         }
       }
     }
@@ -109,7 +127,7 @@ html {
 
 @media (max-width: 500px) {
   #info > .container {
-    padding-top: 9rem;
+    padding-top: 2rem;
   }
 }
 
