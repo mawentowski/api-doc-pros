@@ -60,18 +60,24 @@ html {
 }
 
 // #info
+// you move these queries outside container since you cannot select it from within itself, only elements within are selected.
+
+@media (max-width: 576px) {
+  #info > .container {
+    padding-top: 9rem;
+  }
+}
+@media (min-width: 576px) {
+  #info > .container {
+    padding-top: 2.8rem;
+  }
+}
 
 #info {
   > .container {
-    padding-top: 4.4rem;
     padding-bottom: 5.7rem;
-
     // you must select like this to override
-    @media (max-width: 576px) {
-      .col-lg-6:nth-of-type(1) {
-        padding-top: 2.8rem;
-      }
-    }
+
     .videoWrapper {
       position: relative;
       padding-bottom: 56.25%;
@@ -118,26 +124,26 @@ html {
   > .container {
     padding-top: 7.5rem;
     padding-bottom: 2.5rem;
-  }
-  .card {
-    margin-bottom: 3.8rem;
-    .icon-holder {
-      margin-top: -2.5rem;
+    .card {
+      margin-bottom: 3.8rem;
+      .icon-holder {
+        margin-top: -2.5rem;
+      }
+      .card-body.service-card h5 {
+        color: gray;
+      }
     }
-    .card-body.service-card h5 {
-      color: gray;
-    }
-  }
-  // you have to separate the pseudo class not cascade
-  .card:hover {
-    background-color: $primary;
-    .service-title,
-    .card-text {
-      color: white;
-    }
-    .service-card h5 {
-      color: lightgrey;
-      font-size: 1rem;
+    // you have to separate the pseudo class not cascade
+    .card:hover {
+      background-color: $primary;
+      .service-title,
+      .card-text {
+        color: white;
+      }
+      .service-card h5 {
+        color: lightgrey;
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -170,7 +176,7 @@ html {
       .card-img-overlay {
         color: #17a2b8;
         .card-title {
-          padding-top: 30px;
+          padding-top: 1.9rem;
         }
         .card-text {
           font-weight: 1.9rem;
@@ -188,20 +194,20 @@ html {
   > .container {
     padding-top: 3.1rem;
     padding-bottom: 3.1rem;
-  }
 
-  .owl-item {
-    color: white;
-    opacity: 0.7;
-  }
-  .fa.fa-twitter {
-    font-size: 1.9rem;
-  }
-  h5 {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.3rem;
-    padding-top: 0.6rem;
+    .owl-item {
+      color: white;
+      opacity: 0.7;
+    }
+    .fa.fa-twitter {
+      font-size: 1.9rem;
+    }
+    h5 {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.3rem;
+      padding-top: 0.6rem;
+    }
   }
 }
 
@@ -214,36 +220,68 @@ html {
     padding-bottom: 4.4rem;
     padding-left: 7.2rem;
     padding-right: 7.2rem;
-  }
-  .submit-btn-wrapper {
-    margin-top: 0.9rem;
-    text-align: center;
+
+    .submit-btn-wrapper {
+      margin-top: 0.9rem;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .row:nth-of-type(2) {
+        .input-group {
+          margin-top: 1.5rem;
+        }
+      }
+    }
   }
 }
 
 // #footer
 
-#footer {
-  > .container-fluid {
+@media (max-width: 992px) {
+  #footer > .container-fluid {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  #footer > .container-fluid {
     padding-top: 6.3rem;
     padding-bottom: 6.3rem;
   }
-  h4 {
-    font-size: 1.1rem;
-  }
+}
 
-  #footer-icons {
-    .icon-wrapper {
-      padding-top: 0.4rem;
-      i {
-        font-size: 1.3rem;
+#footer {
+  > .container-fluid {
+    h4 {
+      font-size: 1.2rem;
+    }
+    @media (max-width: 992px) {
+      .row > {
+        .d-flex:nth-of-type(1) {
+          h4 {
+            // font-size: 1.1rem;
+            padding-bottom: 0.8rem;
+          }
+        }
+        .d-flex:nth-of-type(2) {
+          padding-top: 1.6rem;
+          padding-bottom: 1.6rem;
+        }
       }
     }
-    .border {
-      border: 0.15rem solid #dee2e6;
-      width: 2.6rem;
-      height: 2.6rem;
-      text-align: center;
+    #footer-icons {
+      .icon-wrapper {
+        padding-top: 0.4rem;
+        i {
+          font-size: 1.3rem;
+        }
+      }
+      .border {
+        border: 0.15rem solid #dee2e6;
+        width: 2.6rem;
+        height: 2.6rem;
+        text-align: center;
+      }
     }
   }
 }

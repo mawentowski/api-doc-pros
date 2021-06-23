@@ -34,12 +34,14 @@ html {
   #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
     padding-bottom: 7rem; }
 
+@media (max-width: 576px) {
+  #info > .container {
+    padding-top: 9rem; } }
+@media (min-width: 576px) {
+  #info > .container {
+    padding-top: 2.8rem; } }
 #info > .container {
-  padding-top: 4.4rem;
   padding-bottom: 5.7rem; }
-  @media (max-width: 576px) {
-    #info > .container .col-lg-6:nth-of-type(1) {
-      padding-top: 2.8rem; } }
   #info > .container .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -69,20 +71,20 @@ html {
 #services > .container {
   padding-top: 7.5rem;
   padding-bottom: 2.5rem; }
-#services .card {
-  margin-bottom: 3.8rem; }
-  #services .card .icon-holder {
-    margin-top: -2.5rem; }
-  #services .card .card-body.service-card h5 {
-    color: gray; }
-#services .card:hover {
-  background-color: #3292a6; }
-  #services .card:hover .service-title,
-  #services .card:hover .card-text {
-    color: white; }
-  #services .card:hover .service-card h5 {
-    color: lightgrey;
-    font-size: 1rem; }
+  #services > .container .card {
+    margin-bottom: 3.8rem; }
+    #services > .container .card .icon-holder {
+      margin-top: -2.5rem; }
+    #services > .container .card .card-body.service-card h5 {
+      color: gray; }
+  #services > .container .card:hover {
+    background-color: #3292a6; }
+    #services > .container .card:hover .service-title,
+    #services > .container .card:hover .card-text {
+      color: white; }
+    #services > .container .card:hover .service-card h5 {
+      color: lightgrey;
+      font-size: 1rem; }
 
 #portfolio > .container {
   padding-top: 6.3rem;
@@ -98,7 +100,7 @@ html {
   #portfolio .card a:hover .card-img-overlay {
     color: #17a2b8; }
     #portfolio .card a:hover .card-img-overlay .card-title {
-      padding-top: 30px; }
+      padding-top: 1.9rem; }
     #portfolio .card a:hover .card-img-overlay .card-text {
       font-weight: 1.9rem; }
 
@@ -107,36 +109,50 @@ html {
   #testimonials > .container {
     padding-top: 3.1rem;
     padding-bottom: 3.1rem; }
-  #testimonials .owl-item {
-    color: white;
-    opacity: 0.7; }
-  #testimonials .fa.fa-twitter {
-    font-size: 1.9rem; }
-  #testimonials h5 {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.3rem;
-    padding-top: 0.6rem; }
+    #testimonials > .container .owl-item {
+      color: white;
+      opacity: 0.7; }
+    #testimonials > .container .fa.fa-twitter {
+      font-size: 1.9rem; }
+    #testimonials > .container h5 {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.3rem;
+      padding-top: 0.6rem; }
 
 #contact > .container {
   padding-top: 4.4rem;
   padding-bottom: 4.4rem;
   padding-left: 7.2rem;
   padding-right: 7.2rem; }
-#contact .submit-btn-wrapper {
-  margin-top: 0.9rem;
-  text-align: center; }
+  #contact > .container .submit-btn-wrapper {
+    margin-top: 0.9rem;
+    text-align: center; }
+  @media (max-width: 768px) {
+    #contact > .container .row:nth-of-type(2) .input-group {
+      margin-top: 1.5rem; } }
 
-#footer > .container-fluid {
-  padding-top: 6.3rem;
-  padding-bottom: 6.3rem; }
-#footer h4 {
-  font-size: 1.1rem; }
-#footer #footer-icons .icon-wrapper {
+@media (max-width: 992px) {
+  #footer > .container-fluid {
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
+@media (min-width: 992px) {
+  #footer > .container-fluid {
+    padding-top: 6.3rem;
+    padding-bottom: 6.3rem; } }
+#footer > .container-fluid h4 {
+  font-size: 1.2rem; }
+@media (max-width: 992px) {
+  #footer > .container-fluid .row > .d-flex:nth-of-type(1) h4 {
+    padding-bottom: 0.8rem; }
+  #footer > .container-fluid .row > .d-flex:nth-of-type(2) {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem; } }
+#footer > .container-fluid #footer-icons .icon-wrapper {
   padding-top: 0.4rem; }
-  #footer #footer-icons .icon-wrapper i {
+  #footer > .container-fluid #footer-icons .icon-wrapper i {
     font-size: 1.3rem; }
-#footer #footer-icons .border {
+#footer > .container-fluid #footer-icons .border {
   border: 0.15rem solid #dee2e6;
   width: 2.6rem;
   height: 2.6rem;
