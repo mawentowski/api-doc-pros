@@ -30,6 +30,17 @@ html {
 #showcase {
   position: relative;
 
+  @media (max-width: 500px) {
+    .carousel-d-toggle {
+      display: none;
+    }
+  }
+  @media (min-width: 500px) {
+    .carousel-d-toggle {
+      display: block !important;
+    }
+  }
+
   .carousel-indicators li {
     width: 0.75rem;
     height: 0.75rem;
@@ -43,17 +54,51 @@ html {
     background: url(../img/image2.jpg) 0% 0% / cover;
   }
   .carousel-inner {
-    .carousel-item {
-      height: 39rem;
-    }
-    .carousel-item:nth-of-type(1) {
-      .carousel-caption {
-        padding-bottom: 10rem;
+    @media (max-width: 768px) {
+      .carousel-item {
+        height: 33rem;
       }
     }
-    .carousel-item:nth-of-type(2) {
+    @media (min-width: 768px) {
+      .carousel-item {
+        height: 39rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          padding-bottom: 7rem;
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          padding-bottom: 4rem;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          padding-bottom: 10rem;
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          padding-bottom: 7rem;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
       .carousel-caption {
         padding-bottom: 7rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .carousel-caption {
+        .display-3 {
+          font-size: 3.8rem;
+        }
       }
     }
   }
@@ -62,16 +107,22 @@ html {
 // #info
 // you move these queries outside container since you cannot select it from within itself, only elements within are selected.
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   #info > .container {
     padding-top: 9rem;
   }
 }
-@media (min-width: 576px) {
+
+@media (min-width: 500px) {
   #info > .container {
     padding-top: 2.8rem;
   }
 }
+// @media (min-width: 576px) {
+//   #info > .container {
+//     padding-top: 2.8rem;
+//   }
+// }
 
 #info {
   > .container {
@@ -119,6 +170,31 @@ html {
 }
 
 // #services
+@media (max-width: 576px) {
+  #services > .container {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: 576px) {
+  #services > .container {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+@media (min-width: 768px) {
+  #services > .container {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+@media (min-width: 992px) {
+  #services > .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 
 #services {
   > .container {
@@ -214,16 +290,37 @@ html {
 // #contact
 
 #contact {
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+  }
   > .container {
     // you cant to mx-auto to fit the columns to their contents. you have to specify a padding left and right to decrease space available. Also dont do offsetting.
     padding-top: 4.4rem;
     padding-bottom: 4.4rem;
-    padding-left: 7.2rem;
-    padding-right: 7.2rem;
+    // padding-left: 7.2rem;
+    // padding-right: 7.2rem;
 
     .submit-btn-wrapper {
       margin-top: 0.9rem;
       text-align: center;
+    }
+    .row:nth-of-type(1) {
+      margin-bottom: 8px;
     }
     @media (max-width: 768px) {
       .row:nth-of-type(2) {

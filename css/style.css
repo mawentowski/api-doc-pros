@@ -18,6 +18,12 @@ html {
 
 #showcase {
   position: relative; }
+  @media (max-width: 500px) {
+    #showcase .carousel-d-toggle {
+      display: none; } }
+  @media (min-width: 500px) {
+    #showcase .carousel-d-toggle {
+      display: block !important; } }
   #showcase .carousel-indicators li {
     width: 0.75rem;
     height: 0.75rem;
@@ -27,17 +33,33 @@ html {
     background: url(../img/image1.jpg) 0% 0%/cover; }
   #showcase .carousel-image-2 {
     background: url(../img/image2.jpg) 0% 0%/cover; }
-  #showcase .carousel-inner .carousel-item {
-    height: 39rem; }
-  #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
-    padding-bottom: 10rem; }
-  #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
-    padding-bottom: 7rem; }
+  @media (max-width: 768px) {
+    #showcase .carousel-inner .carousel-item {
+      height: 33rem; } }
+  @media (min-width: 768px) {
+    #showcase .carousel-inner .carousel-item {
+      height: 39rem; } }
+  @media (max-width: 768px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
+      padding-bottom: 7rem; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
+      padding-bottom: 4rem; } }
+  @media (min-width: 768px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
+      padding-bottom: 10rem; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
+      padding-bottom: 7rem; } }
+  @media (max-width: 768px) {
+    #showcase .carousel-inner .carousel-caption {
+      padding-bottom: 7rem; } }
+  @media (max-width: 768px) {
+    #showcase .carousel-inner .carousel-caption .display-3 {
+      font-size: 3.8rem; } }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   #info > .container {
     padding-top: 9rem; } }
-@media (min-width: 576px) {
+@media (min-width: 500px) {
   #info > .container {
     padding-top: 2.8rem; } }
 #info > .container {
@@ -68,6 +90,22 @@ html {
   padding-top: 2.2rem;
   padding-bottom: 2.2rem; }
 
+@media (max-width: 576px) {
+  #services > .container {
+    padding-right: 90px;
+    padding-left: 90px; } }
+@media (min-width: 576px) {
+  #services > .container {
+    padding-right: 120px;
+    padding-left: 120px; } }
+@media (min-width: 768px) {
+  #services > .container {
+    padding-right: 80px;
+    padding-left: 80px; } }
+@media (min-width: 992px) {
+  #services > .container {
+    padding-right: 10px;
+    padding-left: 10px; } }
 #services > .container {
   padding-top: 7.5rem;
   padding-bottom: 2.5rem; }
@@ -120,14 +158,26 @@ html {
       line-height: 1.3rem;
       padding-top: 0.6rem; }
 
+@media (max-width: 768px) {
+  #contact .container {
+    padding-left: 5rem;
+    padding-right: 5rem; } }
+@media (min-width: 768px) {
+  #contact .container {
+    padding-left: 6rem;
+    padding-right: 6rem; } }
+@media (min-width: 992px) {
+  #contact .container {
+    padding-left: 10rem;
+    padding-right: 10rem; } }
 #contact > .container {
   padding-top: 4.4rem;
-  padding-bottom: 4.4rem;
-  padding-left: 7.2rem;
-  padding-right: 7.2rem; }
+  padding-bottom: 4.4rem; }
   #contact > .container .submit-btn-wrapper {
     margin-top: 0.9rem;
     text-align: center; }
+  #contact > .container .row:nth-of-type(1) {
+    margin-bottom: 8px; }
   @media (max-width: 768px) {
     #contact > .container .row:nth-of-type(2) .input-group {
       margin-top: 1.5rem; } }
