@@ -18,12 +18,6 @@ html {
 
 #showcase {
   position: relative; }
-  @media (max-width: 500px) {
-    #showcase .carousel-d-toggle {
-      display: none; } }
-  @media (min-width: 500px) {
-    #showcase .carousel-d-toggle {
-      display: block !important; } }
   #showcase .carousel-indicators li {
     width: 0.75rem;
     height: 0.75rem;

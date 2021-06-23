@@ -30,16 +30,16 @@ html {
 #showcase {
   position: relative;
 
-  @media (max-width: 500px) {
-    .carousel-d-toggle {
-      display: none;
-    }
-  }
-  @media (min-width: 500px) {
-    .carousel-d-toggle {
-      display: block !important;
-    }
-  }
+  // @media (max-width: 500px) {
+  //   .carousel-d-toggle {
+  //     display: none;
+  //   }
+  // }
+  // @media (min-width: 500px) {
+  //   .carousel-d-toggle {
+  //     display: block !important;
+  //   }
+  // }
 
   .carousel-indicators li {
     width: 0.75rem;
