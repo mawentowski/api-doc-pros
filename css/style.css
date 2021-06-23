@@ -1,5 +1,5 @@
 html {
-  font-size: 12px; }
+  font-size: 15px; }
 
 #home .navbar {
   padding-top: 0.8rem; }
@@ -24,7 +24,7 @@ html {
       height: 33em; } }
   @media (min-width: 768px) {
     #showcase .carousel-inner .carousel-item {
-      height: 39em; } }
+      height: 57em; } }
   @media (max-width: 768px) {
     #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
       padding-bottom: 4em; }

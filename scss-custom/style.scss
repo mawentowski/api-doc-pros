@@ -2,7 +2,7 @@ $primary: #3292a6;
 $primary-overlay: rgba(50, 146, 166, 0.8);
 
 html {
-  font-size: 12px;
+  font-size: 15px;
   // contact and footer section needs to be adjusted here
   // too much space in footer section need side padding
   // @media (min-width: 768px) {
@@ -74,7 +74,7 @@ html {
     }
     @media (min-width: 768px) {
       .carousel-item {
-        height: 39em;
+        height: 57em;
       }
     }
     @media (max-width: 768px) {
