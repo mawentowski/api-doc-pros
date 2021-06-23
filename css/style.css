@@ -1,14 +1,5 @@
 html {
-  font-size: 10px; }
-  @media (min-width: 768px) {
-    html {
-      font-size: 12px; } }
-  @media (min-width: 992px) {
-    html {
-      font-size: 14px; } }
-  @media (min-width: 1200px) {
-    html {
-      font-size: 16px; } }
+  font-size: 12px; }
 
 #home .navbar {
   padding-top: 0.8rem; }
@@ -19,19 +10,10 @@ html {
 #showcase {
   position: relative;
   font-size: 10px; }
-  @media (min-width: 768px) {
-    #showcase {
-      font-size: 12px; } }
-  @media (min-width: 992px) {
-    #showcase {
-      font-size: 14px; } }
-  @media (min-width: 1200px) {
-    #showcase {
-      font-size: 16px; } }
   #showcase .carousel-indicators li {
-    width: 0.75rem;
-    height: 0.75rem;
-    margin: 0.35rem;
+    width: 0.75em;
+    height: 0.75em;
+    margin: 0.35em;
     border-radius: 50%; }
   #showcase .carousel-image-1 {
     background: url(../img/image1.jpg) 0% 0%/cover; }
@@ -39,25 +21,27 @@ html {
     background: url(../img/image2.jpg) 0% 0%/cover; }
   @media (max-width: 768px) {
     #showcase .carousel-inner .carousel-item {
-      height: 33rem; } }
+      height: 33em; } }
   @media (min-width: 768px) {
     #showcase .carousel-inner .carousel-item {
-      height: 39rem; } }
+      height: 39em; } }
   @media (max-width: 768px) {
     #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
-      padding-bottom: 4rem; }
+      padding-bottom: 4em; }
     #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
-      padding-bottom: 4rem; } }
+      padding-bottom: 4em; } }
   @media (min-width: 768px) {
     #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
-      padding-bottom: 8rem; }
+      padding-bottom: 8em; }
     #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
-      padding-bottom: 8rem; } }
+      padding-bottom: 8em; } }
   @media (max-width: 768px) {
     #showcase .carousel-inner .carousel-caption:nth-of-type(1) .display-3 {
       font-size: 3.8em; }
     #showcase .carousel-inner .carousel-caption:nth-of-type(1) .display-3 {
-      font-size: 3em; } }
+      font-size: 3em; }
+    #showcase .carousel-inner .carousel-caption:nth-of-type(1) .lead {
+      font-size: 1.2em; } }
 
 @media (max-width: 500px) {
   #info > .container {

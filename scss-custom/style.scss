@@ -2,18 +2,18 @@ $primary: #3292a6;
 $primary-overlay: rgba(50, 146, 166, 0.8);
 
 html {
-  font-size: 10px;
+  font-size: 12px;
   // contact and footer section needs to be adjusted here
   // too much space in footer section need side padding
-  @media (min-width: 768px) {
-    font-size: 12px;
-  }
-  @media (min-width: 992px) {
-    font-size: 14px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 16px;
-  }
+  // @media (min-width: 768px) {
+  //   font-size: 12px;
+  // }
+  // @media (min-width: 992px) {
+  //   font-size: 14px;
+  // }
+  // @media (min-width: 1200px) {
+  //   font-size: 16px;
+  // }
 }
 #home {
   .navbar {
@@ -44,20 +44,20 @@ html {
   font-size: 10px;
   // contact and footer section needs to be adjusted here
   // too much space in footer section need side padding
-  @media (min-width: 768px) {
-    font-size: 12px;
-  }
-  @media (min-width: 992px) {
-    font-size: 14px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 16px;
-  }
+  // @media (min-width: 768px) {
+  //   font-size: 12px;
+  // }
+  // @media (min-width: 992px) {
+  //   font-size: 14px;
+  // }
+  // @media (min-width: 1200px) {
+  //   font-size: 16px;
+  // }
 
   .carousel-indicators li {
-    width: 0.75rem;
-    height: 0.75rem;
-    margin: 0.35rem;
+    width: 0.75em;
+    height: 0.75em;
+    margin: 0.35em;
     border-radius: 50%;
   }
   .carousel-image-1 {
@@ -69,35 +69,35 @@ html {
   .carousel-inner {
     @media (max-width: 768px) {
       .carousel-item {
-        height: 33rem;
+        height: 33em;
       }
     }
     @media (min-width: 768px) {
       .carousel-item {
-        height: 39rem;
+        height: 39em;
       }
     }
     @media (max-width: 768px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
-          padding-bottom: 4rem;
+          padding-bottom: 4em;
         }
       }
       .carousel-item:nth-of-type(2) {
         .carousel-caption {
-          padding-bottom: 4rem;
+          padding-bottom: 4em;
         }
       }
     }
     @media (min-width: 768px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
-          padding-bottom: 8rem;
+          padding-bottom: 8em;
         }
       }
       .carousel-item:nth-of-type(2) {
         .carousel-caption {
-          padding-bottom: 8rem;
+          padding-bottom: 8em;
         }
       }
     }
@@ -116,6 +116,9 @@ html {
       .carousel-caption:nth-of-type(1) {
         .display-3 {
           font-size: 3em;
+        }
+        .lead {
+          font-size: 1.2em;
         }
       }
     }
