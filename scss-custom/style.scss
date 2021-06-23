@@ -67,29 +67,19 @@ html {
     background: url(../img/image2.jpg) 0% 0% / cover;
   }
   .carousel-inner {
-    @media (max-width: 768px) {
+    // you have to use a subtracted value for max-width
+    @media (max-width: 767px) {
       .carousel-item {
-        height: 33em;
+        height: 47em;
       }
     }
     @media (min-width: 768px) {
       .carousel-item {
-        height: 57em;
+        height: 62em;
       }
     }
-    @media (max-width: 768px) {
-      .carousel-item:nth-of-type(1) {
-        .carousel-caption {
-          padding-bottom: 4em;
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          padding-bottom: 4em;
-        }
-      }
-    }
-    @media (min-width: 768px) {
+
+    @media (max-width: 767px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
           padding-bottom: 8em;
@@ -97,7 +87,41 @@ html {
       }
       .carousel-item:nth-of-type(2) {
         .carousel-caption {
-          padding-bottom: 8em;
+          padding-bottom: 4em;
+        }
+      }
+    }
+
+    @media (min-width: 576px) {
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          padding-bottom: 7em;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          padding-bottom: 10em;
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          padding-bottom: 6em;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          padding-bottom: 14em;
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          padding-bottom: 12em;
         }
       }
     }
@@ -107,18 +131,79 @@ html {
     //     padding-bottom: 7rem;
     //   }
     // }
-    @media (max-width: 768px) {
-      .carousel-caption:nth-of-type(1) {
-        .display-3 {
-          font-size: 3.8em;
+    // remember if you want a select an element with a given class, you dont use a descendent selector with space, there is no space since you are addressing the same element. if there is already a class assigned to the element, you will lose the specificity battle if you are trying to do a generic elements selector.
+    @media (max-width: 767px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          .display-3 {
+            font-size: 5.2em;
+          }
+          p.lead {
+            font-size: 1.2em;
+          }
         }
       }
-      .carousel-caption:nth-of-type(1) {
-        .display-3 {
-          font-size: 3em;
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          .display-3 {
+            font-size: 4.2em;
+          }
+          h3.lead {
+            font-size: 1.9em;
+          }
+          p.lead {
+            font-size: 1.2em;
+          }
         }
-        .lead {
-          font-size: 1.2em;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          .display-3 {
+            font-size: 7em;
+          }
+          p.lead {
+            font-size: 1.5em;
+          }
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          .display-3 {
+            font-size: 7em;
+          }
+          h3.lead {
+            font-size: 1.9em;
+          }
+          p.lead {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          p.lead {
+            font-size: 2.2em;
+            padding-bottom: 30px;
+            padding-top: 12px;
+          }
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          p.lead {
+            font-size: 2.2em;
+            padding-bottom: 30px;
+            padding-top: 12px;
+          }
+          h3.lead {
+            font-size: 2.6em;
+            padding-bottom: 10px;
+          }
         }
       }
     }
@@ -193,8 +278,8 @@ html {
 // #services
 @media (max-width: 576px) {
   #services > .container {
-    padding-right: 90px;
-    padding-left: 90px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 
@@ -313,8 +398,8 @@ html {
 #contact {
   @media (max-width: 768px) {
     .container {
-      padding-left: 5rem;
-      padding-right: 5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
   @media (min-width: 768px) {

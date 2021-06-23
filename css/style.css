@@ -19,29 +19,64 @@ html {
     background: url(../img/image1.jpg) 0% 0%/cover; }
   #showcase .carousel-image-2 {
     background: url(../img/image2.jpg) 0% 0%/cover; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     #showcase .carousel-inner .carousel-item {
-      height: 33em; } }
+      height: 47em; } }
   @media (min-width: 768px) {
     #showcase .carousel-inner .carousel-item {
-      height: 57em; } }
-  @media (max-width: 768px) {
-    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
-      padding-bottom: 4em; }
-    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
-      padding-bottom: 4em; } }
-  @media (min-width: 768px) {
+      height: 62em; } }
+  @media (max-width: 767px) {
     #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
       padding-bottom: 8em; }
     #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
-      padding-bottom: 8em; } }
-  @media (max-width: 768px) {
-    #showcase .carousel-inner .carousel-caption:nth-of-type(1) .display-3 {
-      font-size: 3.8em; }
-    #showcase .carousel-inner .carousel-caption:nth-of-type(1) .display-3 {
-      font-size: 3em; }
-    #showcase .carousel-inner .carousel-caption:nth-of-type(1) .lead {
+      padding-bottom: 4em; } }
+  @media (min-width: 576px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
+      padding-bottom: 7em; } }
+  @media (min-width: 768px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
+      padding-bottom: 10em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
+      padding-bottom: 6em; } }
+  @media (min-width: 992px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption {
+      padding-bottom: 14em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption {
+      padding-bottom: 12em; } }
+  @media (max-width: 767px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption .display-3 {
+      font-size: 5.2em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption p.lead {
+      font-size: 1.2em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption .display-3 {
+      font-size: 4.2em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption h3.lead {
+      font-size: 1.9em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption p.lead {
       font-size: 1.2em; } }
+  @media (min-width: 768px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption .display-3 {
+      font-size: 7em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption p.lead {
+      font-size: 1.5em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption .display-3 {
+      font-size: 7em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption h3.lead {
+      font-size: 1.9em; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption p.lead {
+      font-size: 1.5em; } }
+  @media (min-width: 992px) {
+    #showcase .carousel-inner .carousel-item:nth-of-type(1) .carousel-caption p.lead {
+      font-size: 2.2em;
+      padding-bottom: 30px;
+      padding-top: 12px; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption p.lead {
+      font-size: 2.2em;
+      padding-bottom: 30px;
+      padding-top: 12px; }
+    #showcase .carousel-inner .carousel-item:nth-of-type(2) .carousel-caption h3.lead {
+      font-size: 2.6em;
+      padding-bottom: 10px; } }
 
 @media (max-width: 500px) {
   #info > .container {
@@ -79,8 +114,8 @@ html {
 
 @media (max-width: 576px) {
   #services > .container {
-    padding-right: 90px;
-    padding-left: 90px; } }
+    padding-right: 60px;
+    padding-left: 60px; } }
 @media (min-width: 576px) {
   #services > .container {
     padding-right: 120px;
@@ -147,8 +182,8 @@ html {
 
 @media (max-width: 768px) {
   #contact .container {
-    padding-left: 5rem;
-    padding-right: 5rem; } }
+    padding-left: 2rem;
+    padding-right: 2rem; } }
 @media (min-width: 768px) {
   #contact .container {
     padding-left: 6rem;
