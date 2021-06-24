@@ -66,6 +66,9 @@ html {
   .carousel-image-2 {
     background: url(../img/image2.jpg) 0% 0% / cover;
   }
+  .carousel-image-3 {
+    background: url(../img/image3.jpg) 0% 0% / cover;
+  }
   .carousel-inner {
     // you have to use a subtracted value for max-width
     @media (max-width: 575px) {
@@ -85,12 +88,13 @@ html {
     }
 
     @media (max-width: 575px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           padding-bottom: 12em;
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           padding-bottom: 8em;
         }
@@ -98,12 +102,13 @@ html {
     }
 
     @media (min-width: 576px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           padding-bottom: 7em;
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           padding-bottom: 3em;
         }
@@ -124,12 +129,13 @@ html {
     // }
 
     @media (min-width: 767px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           padding-bottom: 8em;
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           padding-bottom: 4em;
         }
@@ -137,12 +143,13 @@ html {
     }
 
     @media (min-width: 768px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           padding-bottom: 16em;
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           padding-bottom: 8em;
         }
@@ -150,12 +157,13 @@ html {
     }
 
     @media (min-width: 992px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           padding-bottom: 9em;
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           padding-bottom: 7em;
         }
@@ -170,7 +178,8 @@ html {
     // remember if you want a select an element with a given class, you dont use a descendent selector with space, there is no space since you are addressing the same element. if there is already a class assigned to the element, you will lose the specificity battle if you are trying to do a generic elements selector.
 
     @media (max-width: 575px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           .display-3 {
             font-size: 4.3em;
@@ -180,7 +189,7 @@ html {
           }
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           .display-3 {
             font-size: 4em;
@@ -196,7 +205,8 @@ html {
     }
 
     @media (min-width: 576px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           .display-3 {
             font-size: 5.2em;
@@ -206,7 +216,7 @@ html {
           }
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           .display-3 {
             font-size: 4.2em;
@@ -222,7 +232,8 @@ html {
     }
 
     @media (min-width: 768px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           .display-3 {
             font-size: 6em;
@@ -232,7 +243,7 @@ html {
           }
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           .display-3 {
             font-size: 7em;
@@ -247,7 +258,8 @@ html {
       }
     }
     @media (min-width: 992px) {
-      .carousel-item:nth-of-type(1) {
+      .carousel-item:nth-of-type(1),
+      .carousel-item:nth-of-type(2) {
         .carousel-caption {
           .display-3 {
             font-size: 7em;
@@ -259,7 +271,7 @@ html {
           }
         }
       }
-      .carousel-item:nth-of-type(2) {
+      .carousel-item:nth-of-type(3) {
         .carousel-caption {
           .display-3 {
             font-size: 7em;
