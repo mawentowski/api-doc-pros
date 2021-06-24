@@ -68,7 +68,12 @@ html {
   }
   .carousel-inner {
     // you have to use a subtracted value for max-width
-    @media (max-width: 767px) {
+    @media (max-width: 575px) {
+      .carousel-item {
+        height: 54em;
+      }
+    }
+    @media (min-width: 576px) {
       .carousel-item {
         height: 47em;
       }
@@ -79,7 +84,46 @@ html {
       }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 575px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          padding-bottom: 12em;
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          padding-bottom: 8em;
+        }
+      }
+    }
+
+    @media (min-width: 576px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          padding-bottom: 7em;
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          padding-bottom: 3em;
+        }
+      }
+    }
+
+    // @media (min-width: 576px) {
+    //   .carousel-item:nth-of-type(1) {
+    //     .carousel-caption {
+    //       padding-bottom: 8em;
+    //     }
+    //   }
+    //   .carousel-item:nth-of-type(2) {
+    //     .carousel-caption {
+    //       padding-bottom: 4em;
+    //     }
+    //   }
+    // }
+
+    @media (min-width: 767px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
           padding-bottom: 8em;
@@ -92,23 +136,15 @@ html {
       }
     }
 
-    @media (min-width: 576px) {
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          padding-bottom: 7em;
-        }
-      }
-    }
-
     @media (min-width: 768px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
-          padding-bottom: 10em;
+          padding-bottom: 16em;
         }
       }
       .carousel-item:nth-of-type(2) {
         .carousel-caption {
-          padding-bottom: 6em;
+          padding-bottom: 8em;
         }
       }
     }
@@ -116,12 +152,12 @@ html {
     @media (min-width: 992px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
-          padding-bottom: 14em;
+          padding-bottom: 9em;
         }
       }
       .carousel-item:nth-of-type(2) {
         .carousel-caption {
-          padding-bottom: 12em;
+          padding-bottom: 7em;
         }
       }
     }
@@ -132,7 +168,34 @@ html {
     //   }
     // }
     // remember if you want a select an element with a given class, you dont use a descendent selector with space, there is no space since you are addressing the same element. if there is already a class assigned to the element, you will lose the specificity battle if you are trying to do a generic elements selector.
-    @media (max-width: 767px) {
+
+    @media (max-width: 575px) {
+      .carousel-item:nth-of-type(1) {
+        .carousel-caption {
+          .display-3 {
+            font-size: 4.3em;
+          }
+          p.lead {
+            font-size: 1.2em;
+          }
+        }
+      }
+      .carousel-item:nth-of-type(2) {
+        .carousel-caption {
+          .display-3 {
+            font-size: 4em;
+          }
+          h3.lead {
+            font-size: 1.9em;
+          }
+          p.lead {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 576px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
           .display-3 {
@@ -162,7 +225,7 @@ html {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
           .display-3 {
-            font-size: 7em;
+            font-size: 6em;
           }
           p.lead {
             font-size: 1.5em;
@@ -186,6 +249,9 @@ html {
     @media (min-width: 992px) {
       .carousel-item:nth-of-type(1) {
         .carousel-caption {
+          .display-3 {
+            font-size: 7em;
+          }
           p.lead {
             font-size: 2.2em;
             padding-bottom: 30px;
@@ -195,6 +261,9 @@ html {
       }
       .carousel-item:nth-of-type(2) {
         .carousel-caption {
+          .display-3 {
+            font-size: 7em;
+          }
           p.lead {
             font-size: 2.2em;
             padding-bottom: 30px;
@@ -232,7 +301,7 @@ html {
 
 #info {
   > .container {
-    padding-bottom: 5.7rem;
+    padding-bottom: 3.5rem;
     // you must select like this to override
 
     .videoWrapper {
