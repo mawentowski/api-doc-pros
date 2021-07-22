@@ -576,4 +576,10 @@ html {
 #footer-bottom > .container-fluid {
   padding-top: 1.9rem;
   padding-bottom: 1.3rem;
+  .icon-copyrights {
+    a {
+      font-size: -10em;
+      color: transparent;
+    }
+  }
 }
