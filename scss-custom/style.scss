@@ -1,392 +1,382 @@
-$primary: #3292a6;
-$primary-overlay: rgba(50, 146, 166, 0.8);
+// COLORS
+$primary-color: #3292a6;
+
+// FONTS
+$primary-font-color: white;
+$secondary-font-color: #212529;
+$section-h1-color: #6c757d;
+$footer-font-color:#6edce4;
+
+// NAVBAR - DARK
+// $nav-bg-color: #343a40;
+// $nav-font-color: white;
+
+// NAVBAR - LIGHT
+$nav-bg-color:white;
+$nav-font-color: #212529;
+$nav-font-link-color: white;
+
+// SECTION HEADERS
+$section-header-bg-color: #343a40;
+$section-header-font-color: white;
+
+// SECTIONS
+$section-bg-primary: white;
+$section-bg-secondary: #f8f9fa;
+
+// FONT SIZING
+$base-font-size: calc(10px + 1vw);
+$base-line-height: calc(10px + 1vw);
+$base-font-weight: 300;
+$body-font-family: 'Open Sans Condensed', sans-serif !important;
 
 html {
-  font-size: 15px;
-  // contact and footer section needs to be adjusted here
-  // too much space in footer section need side padding
-  // @media (min-width: 768px) {
-  //   font-size: 12px;
-  // }
-  // @media (min-width: 992px) {
-  //   font-size: 14px;
-  // }
-  // @media (min-width: 1200px) {
-  //   font-size: 16px;
-  // }
+  font-size: $base-font-size;
 }
-#home {
-  .navbar {
-    padding-top: 0.8rem;
-  }
-  .nav-link {
-    font-size: 1.1rem;
-    padding-right: 1.7rem;
+
+body {
+  font-family: $body-font-family;
+  font-weight: $base-font-weight;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem !important;
+  font-family: inherit !important; 
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  color: inherit !important;
+}
+
+// Defined in Type.css Boostrap
+h1 {
+  font-size: 2em !important; 
+  line-height: calc(78px + 1vw) !important;
+}
+
+h1.section-body {
+  color: $section-h1-color !important;
+}
+
+@media (max-width: 991px) {
+  h1.section-body {
+    text-align:center;
   }
 }
 
-// #showcase
+// section header
+.display-3 {
+  font-size: 4rem !important;
+  font-weight: 300 !important;
+  line-height: calc(124.8px + 1vw) !important;
+}
+
+h2 {
+  font-size: 2rem !important; 
+  line-height: calc(52px + 1vw) !important;
+}
+
+h3 {
+  font-size: 1.75rem !important; 
+  line-height: calc(45px + 1vw) !important;
+}
+
+h4 {
+  font-size: 1.5rem !important; 
+  line-height: calc(39px + 1vw) !important;
+}
+
+h5 {
+  font-size: 1rem !important; 
+  line-height: calc(26px + 1vw) !important;
+}
+
+
+p {
+  font-size: $base-font-size !important; 
+  font-size: $base-line-height !important; 
+}
+
+p.lead {
+  font-weight: 300 !important;
+}
+
+
+
+
+#home {
+ 
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px !important;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1700px !important;
+    }
+  }
+
+
+  .container-fluid {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+  }
+  // You have to keep navbar-dark as it includes the hamburger image
+  .navbar {
+    padding: 0rem !important;
+    background-color: $nav-bg-color !important;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    // Font Size
+    font-size: 1rem;
+  }
+  .btn-dark {
+    color: #fff;
+    background-color: $nav-bg-color !important;
+    border-color: $nav-bg-color !important;
+    // Font Size
+    font-size: 0.8em;
+    padding: 0.5rem 1rem;
+  }
+}
+
+#main-nav {
+
+  .navbar-brand .logo-text {
+    // FONT SIZE!!!
+    font-size: 1.6rem;
+    color: $nav-font-color;
+
+    letter-spacing: 0.03em;
+    padding-left: 8px;
+  }
+  
+  @media (max-width:767px) {
+    .navbar-brand .logo-text {
+      display: none;
+    }
+  }
+  @media (min-width:768px) {
+    .navbar-brand .logo-text {
+      display: inline;
+    }
+  }
+
+  img {
+    vertical-align: unset;
+  }
+
+  .nav-item {
+    border-top: 5px solid transparent;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px; 
+  }
+  .nav-link {
+    // FONT SIZE!!!
+    font-size: 0.9rem;
+    color: $nav-font-color;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  } 
+  .nav-item:hover {
+    transition: background .3s ease-in-out, color .3s ease-in-out, .25s line-height ease-in-out, .25s height ease-in-out;
+    background-color: $primary-color;
+    .nav-link {
+      color: $nav-font-link-color;
+    }
+  }
+}
+
+// SHOWCASE
 
 #showcase {
   position: relative;
+  // Font size
+  // font-size: 10px;
 
-  // @media (max-width: 500px) {
-  //   .carousel-d-toggle {
-  //     display: none;
-  //   }
-  // }
-  // @media (min-width: 500px) {
-  //   .carousel-d-toggle {
-  //     display: block !important;
-  //   }
-  // }
-
-  font-size: 10px;
-  // contact and footer section needs to be adjusted here
-  // too much space in footer section need side padding
-  // @media (min-width: 768px) {
-  //   font-size: 12px;
-  // }
-  // @media (min-width: 992px) {
-  //   font-size: 14px;
-  // }
-  // @media (min-width: 1200px) {
-  //   font-size: 16px;
-  // }
-
+  // These are the arrows
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 37px !important;
+    height: 49px !important;
+  }
+  
+  // These are the two dots
   .carousel-indicators li {
     width: 0.75em;
     height: 0.75em;
     margin: 0.35em;
     border-radius: 50%;
   }
+
+
+
   .carousel-image-1 {
-    background: url(../img/image1.jpg) 0% 0% / cover;
+    background: url(../img/bright-office-9.png) 0% 0% / cover;
   }
+
   .carousel-image-2 {
-    background: url(../img/image2.jpg) 0% 0% / cover;
+   background: url(../img/wood-table-3.png) 0% 0% / cover;
   }
   .carousel-image-3 {
-    background: url(../img/image3.jpg) 0% 0% / cover;
+    background: url(../img/sticky-notes.png) 0% 0% / cover;
   }
-  .carousel-inner {
-    // you have to use a subtracted value for max-width
-    @media (max-width: 575px) {
-      .carousel-item {
-        height: 54em;
-      }
-    }
-    @media (min-width: 576px) {
-      .carousel-item {
-        height: 47em;
-      }
-    }
-    @media (min-width: 768px) {
-      .carousel-item {
-        height: 62em;
-      }
-    }
 
-    @media (max-width: 575px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          padding-bottom: 12em;
-        }
+
+  @media (min-width: 576px) {
+    .carousel-item {
+      height: 420px;
+    }
+    .carousel-caption {
+      top: 15% !important;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .carousel-item {
+      height: 460px;
+    }
+    .carousel-caption {
+      top: 20% !important;
+    }
+  }
+
+
+  @media (min-width: 992px) {
+    .carousel-item {
+      height: 530px;
+    }
+    .carousel-caption {
+      top: 25% !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .carousel-item {
+      height: 575px;
+    }
+    .carousel-caption {
+      top: 25% !important;
+    }
+  }
+  @media (min-width: 1400px) {
+    .carousel-item {
+      height: 700px;
+    }
+    .carousel-caption {
+      top: 26% !important;
+    }
+  }
+
+
+  .carousel-item:nth-of-type(1), .carousel-item:nth-of-type(3) {
+    .carousel-caption {
+      padding-bottom: 9em;
+      h1 {
+        font-size: 7em;
+        letter-spacing: 0.04em;
+        font-weight: 300;     
+        line-height: 1.56em;   
       }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          padding-bottom: 8em;
-        }
+      p {
+        font-size: 2.9em;
+        padding-bottom: 30px;
+        // padding-top: 12px;
+        letter-spacing: 0.04em;
+        font-weight: 300;        
       }
     }
-
-    @media (min-width: 576px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          padding-bottom: 7em;
+    .carousel-item:nth-of-type(2) {
+      .carousel-caption {
+        padding-bottom: 7em;
+        h1 {
+          font-size: 5.5em;
+          letter-spacing: 0.04em;
+          font-weight: 300;
+          line-height: 1.56em;
         }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          padding-bottom: 8em;
+        p {
+          font-size: 2.9em;
+          padding-bottom: 30px;
+          padding-top: 12px;
+          letter-spacing: 0.04em;
+          font-weight: 300;
         }
-      }
-    }
-
-    // @media (min-width: 576px) {
-    //   .carousel-item:nth-of-type(1) {
-    //     .carousel-caption {
-    //       padding-bottom: 8em;
-    //     }
-    //   }
-    //   .carousel-item:nth-of-type(2) {
-    //     .carousel-caption {
-    //       padding-bottom: 4em;
-    //     }
-    //   }
-    // }
-
-    @media (min-width: 767px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          padding-bottom: 8em;
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          padding-bottom: 4em;
-        }
-      }
-    }
-
-    @media (min-width: 768px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          padding-bottom: 16em;
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          padding-bottom: 13em;
-        }
-      }
-    }
-
-    @media (min-width: 992px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          padding-bottom: 9em;
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          padding-bottom: 7em;
-        }
-      }
-    }
-
-    // @media (max-width: 768px) {
-    //   .carousel-caption {
-    //     padding-bottom: 7rem;
-    //   }
-    // }
-    // remember if you want a select an element with a given class, you dont use a descendent selector with space, there is no space since you are addressing the same element. if there is already a class assigned to the element, you will lose the specificity battle if you are trying to do a generic elements selector.
-
-    @media (max-width: 575px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 4.3em;
-          }
-          p.lead {
-            font-size: 1.2em;
-          }
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 4em;
-          }
-          h3.lead {
-            font-size: 1.9em;
-          }
-          p.lead {
-            font-size: 1.2em;
-          }
-        }
-      }
-    }
-
-    @media (min-width: 576px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 5.2em;
-          }
-          p.lead {
-            font-size: 1.2em;
-          }
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 4.2em;
-          }
-          h3.lead {
-            font-size: 1.9em;
-          }
-          p.lead {
-            font-size: 1.2em;
-          }
-        }
-      }
-    }
-
-    @media (min-width: 768px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 6em;
-          }
-          p.lead {
-            font-size: 1.5em;
-          }
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 6em;
-          }
-          h3.lead {
-            font-size: 1.9em;
-          }
-          p.lead {
-            font-size: 1.5em;
-          }
-        }
-      }
-    }
-    @media (min-width: 992px) {
-      .carousel-item:nth-of-type(1),
-      .carousel-item:nth-of-type(3) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 7em;
-          }
-          p.lead {
-            font-size: 2.2em;
-            padding-bottom: 30px;
-            padding-top: 12px;
-          }
-        }
-      }
-      .carousel-item:nth-of-type(2) {
-        .carousel-caption {
-          .display-3 {
-            font-size: 5.5em;
-          }
-          p.lead {
-            font-size: 2.2em;
-            padding-bottom: 30px;
-            padding-top: 12px;
-          }
-          h3.lead {
-            font-size: 2.6em;
-            padding-bottom: 10px;
-          }
-        }
+        h3 {
+          font-size: 3.2em;
+          padding-bottom: 10px;
+          letter-spacing: 0.04em;
+          font-weight: 300;
+        }       
       }
     }
   }
 }
-
-// #info
-// you move these queries outside container since you cannot select it from within itself, only elements within are selected.
-
-@media (max-width: 500px) {
-  #info > .container {
-    padding-top: 2rem;
-  }
-}
-
-@media (min-width: 500px) {
-  #info > .container {
-    padding-top: 2.8rem;
-  }
-}
-// @media (min-width: 576px) {
-//   #info > .container {
-//     padding-top: 2.8rem;
-//   }
-// }
 
 #info {
-  > .container {
-    padding-bottom: 3.5rem;
-    // you must select like this to override
+  background-color: $section-bg-primary;
+  .container {
+  padding: 2.8rem;
 
-    .videoWrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
 
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+  @media (max-width: 575px) {
+    .col-lg-6 {
+      padding-top: 50px;
     }
-    .info-description {
-      margin-top: 3.1rem;
-      text-align: center;
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
 
-      .info-section:nth-of-type(2n) {
-        margin-top: 3.1rem;
-        margin-bottom: 0.6rem;
-      }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
-    @media (min-width: 992px) {
-      .info-description {
-        padding-left: 4.4rem;
-        text-align: left;
-      }
+  }
+  // Little push down to align with video
+  .info-description {
+    margin-top: 1rem;
+    padding-left: 4.4rem;
+    text-align: left;
     }
   }
 }
 
-// #services-header
-// you must select like this to override
-
-#services-header .container-fluid,
-#portfolio-header .container-fluid {
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
-}
-
-// #services
-@media (max-width: 575px) {
-  #services > .container {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-}
-
-@media (min-width: 576px) {
-  #services > .container {
-    padding-right: 120px;
-    padding-left: 120px;
-  }
-}
-@media (min-width: 768px) {
-  #services > .container {
-    padding-right: 80px;
-    padding-left: 80px;
-  }
-}
-@media (min-width: 992px) {
-  #services > .container {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+// Section header for services and portfolio
+.section-header {
+  background-color: $primary-color;
+  color: $section-header-font-color;
+  text-align: center;
 }
 
 #services {
+  background-color: $section-bg-primary;
   > .container {
     padding-top: 7.5rem;
     padding-bottom: 2.5rem;
+    padding-right: 10px;
+    padding-left: 10px;
     .card {
       margin-bottom: 3.8rem;
       .icon-holder {
@@ -397,17 +387,17 @@ html {
       }
     }
     // you have to separate the pseudo class not cascade
-    .card:hover {
-      background-color: $primary;
-      .service-title,
-      .card-text {
-        color: white;
-      }
-      .service-card h5 {
-        color: lightgrey;
-        font-size: 1rem;
-      }
-    }
+    // .card:hover {
+    //   background-color: $primary-color;
+    //   .service-title,
+    //   .card-text {
+    //     color: white;
+    //   }
+    //   .service-card h5 {
+    //     color: lightgrey;
+    //     // font-size: 1rem;
+    //   }
+    // }
   }
 }
 
@@ -417,13 +407,15 @@ html {
 
 #portfolio {
   // don't select rows for padding
+  background-color: $section-bg-primary;
   > .container {
     padding-top: 6.3rem;
     padding-bottom: 6.3rem;
   }
   .card {
-    border: none;
+  
     a {
+      
       .card-img-top {
         padding: 0.6rem;
       }
@@ -437,7 +429,7 @@ html {
         opacity: 0.3;
       }
       .card-img-overlay {
-        color: #17a2b8;
+        color: $primary-color;
         .card-title {
           padding-top: 1.9rem;
         }
@@ -448,6 +440,8 @@ html {
     }
   }
 }
+
+
 
 // #testimonials
 
@@ -465,18 +459,19 @@ html {
     .fa.fa-twitter {
       font-size: 1.9rem;
     }
-    h5 {
-      font-size: 1rem;
-      font-weight: 300;
-      line-height: 1.3rem;
-      padding-top: 0.6rem;
-    }
+
   }
 }
+
+
+
+
 
 // #contact
 
 #contact {
+  background-color: $section-bg-primary;
+
   @media (max-width: 767px) {
     .container {
       padding-left: 2rem;
@@ -535,16 +530,20 @@ html {
 }
 
 #footer {
+  .bg-light {
+    background-color: $section-bg-secondary !important;
+  }
+  
   > .container-fluid {
     h4 {
-      font-size: 1.2rem;
+      font-size: 1.7rem;
       text-transform: uppercase;
     }
     @media (max-width: 991px) {
       .row > {
         .d-flex:nth-of-type(1) {
           h4 {
-            // font-size: 1.1rem;
+            // Add padding bottom when flex-column is used
             padding-bottom: 0.8rem;
           }
         }
@@ -556,7 +555,7 @@ html {
     }
     #footer-icons {
       .icon-wrapper {
-        padding-top: 0.4rem;
+        padding-top: 0.5rem;
         i {
           font-size: 1.3rem;
         }
@@ -573,9 +572,16 @@ html {
 
 // #footer bottom
 
+
+
 #footer-bottom > .container-fluid {
   padding-top: 1.9rem;
   padding-bottom: 1.3rem;
+  
+  
+  p {
+    color: $footer-font-color;
+  }
   .icon-copyrights {
     a {
       font-size: -10em;
