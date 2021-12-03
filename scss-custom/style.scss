@@ -1,30 +1,13 @@
 // COLORS
-$primary-color: #3292a6;
+$site-primary: #3292a6;
+$lightbg-font: #212529;
+$darkbg-font: #fff;
+$nav-bg: #fcf9e8;
+$section-bg-primary: #fff;
+$section-bg-secondary: #f0f0f0;
+$footer-bg: #343a40;
 
-// FONTS
-$primary-font-color: white;
-$secondary-font-color: #212529;
-$section-h1-color: #6c757d;
-$footer-font-color:#6edce4;
 
-// NAVBAR - DARK
-// $nav-bg-color: #343a40;
-// $nav-font-color: white;
-
-// NAVBAR - LIGHT
-$nav-bg-color:white;
-$nav-font-color: #212529;
-$nav-font-link-color: white;
-
-// SECTION HEADERS
-$section-header-bg-color: #343a40;
-$section-header-font-color: white;
-
-// SECTIONS
-$section-bg-primary: white;
-$section-bg-secondary: #f8f9fa;
-
-// FONT SIZING
 $base-font-size: calc(10px + 1vw);
 $base-line-height: calc(10px + 1vw);
 $base-font-weight: 300;
@@ -43,18 +26,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem !important;
   font-family: inherit !important; 
   font-weight: 500 !important;
-  line-height: 1.2 !important;
   color: inherit !important;
 }
 
 // Defined in Type.css Boostrap
 h1 {
-  font-size: 2em !important; 
-  line-height: calc(78px + 1vw) !important;
+  font-size: 2.2em !important; 
+  line-height: calc(1.8rem + 1vw) !important;
 }
 
 h1.section-body {
-  color: $section-h1-color !important;
+  color: #8f9eac;
+  line-height: calc(2.3rem + 1vw) !important;
 }
 
 @media (max-width: 991px) {
@@ -67,27 +50,27 @@ h1.section-body {
 .display-3 {
   font-size: 4rem !important;
   font-weight: 300 !important;
-  line-height: calc(124.8px + 1vw) !important;
+  margin-bottom: 0rem !important;
 }
 
 h2 {
   font-size: 2rem !important; 
-  line-height: calc(52px + 1vw) !important;
+  line-height: calc(1.6rem + 1vw) !important;
 }
 
 h3 {
-  font-size: 1.75rem !important; 
-  line-height: calc(45px + 1vw) !important;
+  font-size: 1.7rem !important; 
+  line-height: calc(1.5rem + 1vw) !important;
 }
 
 h4 {
   font-size: 1.5rem !important; 
-  line-height: calc(39px + 1vw) !important;
+  line-height: calc(1.3rem + 1vw) !important;
 }
 
 h5 {
-  font-size: 1rem !important; 
-  line-height: calc(26px + 1vw) !important;
+  font-size: 1.2rem !important; 
+  line-height: calc(1.1rem + 1vw) !important;
 }
 
 
@@ -136,37 +119,58 @@ p.lead {
   // You have to keep navbar-dark as it includes the hamburger image
   .navbar {
     padding: 0rem !important;
-    background-color: $nav-bg-color !important;
+    background-color: $nav-bg !important;
   }
+
+  // Give it some padding before it expands
+  @media (max-width: 1200px){
+    .navbar {
+      padding-top: 0.7rem !important;
+      padding-bottom: 0.7rem !important;
+    }
+  
+  }
+
+
 
   .btn-primary {
     color: #fff;
-    background-color: $primary-color !important;
-    border-color: $primary-color !important;
+    background-color: $site-primary !important;
+    border-color: $site-primary !important;
     // Font Size
     font-size: 1rem;
-  }
-  .btn-dark {
-    color: #fff;
-    background-color: $nav-bg-color !important;
-    border-color: $nav-bg-color !important;
-    // Font Size
-    font-size: 0.8em;
-    padding: 0.5rem 1rem;
   }
 }
 
 #main-nav {
 
-  .navbar-brand .logo-text {
-    // FONT SIZE!!!
-    font-size: 1.6rem;
-    color: $nav-font-color;
 
-    letter-spacing: 0.03em;
-    padding-left: 8px;
+
+  .navbar-brand {
+    padding-top: unset !important;
+    padding-bottom: unset !important;
   }
-  
+
+  .navbar-toggler {
+    padding: 0.2rem !important;
+    background-color: $site-primary !important;
+  }
+
+  .navbar-toggler-icon {
+    width: calc(1.29rem + 1vw) !important;
+    height: calc(1.29rem + 1vw) !important;
+  }
+
+  // Below XS breakpoint, at some right margin since it moves to end
+  @media (max-width: 575px) {
+    .nav-item {
+      margin-left: 0.7rem;
+    }
+    .navbar-toggler {
+      margin-right: 1rem;
+    }
+  }
+
   @media (max-width:767px) {
     .navbar-brand .logo-text {
       display: none;
@@ -178,156 +182,192 @@ p.lead {
     }
   }
 
-  img {
+  img.logo {
     vertical-align: unset;
+    width: 8rem;
+    height: 3rem;
   }
 
-  .nav-item {
-    border-top: 5px solid transparent;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px; 
+  // Below XS breakpoint, at some left margin since it moves to end
+  @media (max-width: 575px) {
+  img.logo {
+    margin-left: 1rem;
   }
+  }
+
+
   .nav-link {
-    // FONT SIZE!!!
-    font-size: 0.9rem;
-    color: $nav-font-color;
+    color: $lightbg-font !important;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
-  } 
+    letter-spacing: 0.15rem;
+  }
+  .nav-item {
+    padding-top: calc(0.7rem + 1vw) !important;
+    padding-bottom: calc(0.7rem + 1vw) !important;
+    padding-left: calc(0.1rem + 1vw) !important;
+    padding-right: calc(0.1rem + 1vw) !important;
+  }
+
+  @media (max-width: 1200px) {
+    // reduce padding for expanded menu
+    .nav-item {
+      // 8 pixels.
+      padding-top: calc(0.1rem + 1vw) !important;
+      padding-bottom: calc(0.1rem + 1vw) !important;
+      padding-left: calc(0.08rem + 1vw) !important;
+      padding-right: calc(0.2rem + 1vw) !important;
+    }
+    // Add some padding to the top and bottom of expand navbar
+    .navbar-nav {
+      padding-top: calc(0.1rem + 1vw) !important;
+      padding-bottom: calc(0.8rem + 1vw) !important;
+    }
+  }
+
+
+
+
   .nav-item:hover {
     transition: background .3s ease-in-out, color .3s ease-in-out, .25s line-height ease-in-out, .25s height ease-in-out;
-    background-color: $primary-color;
+    background-color: $site-primary !important;
     .nav-link {
-      color: $nav-font-link-color;
+      color: $darkbg-font !important;
     }
   }
 }
 
 // SHOWCASE
 
+// Purpose: Do not display showcase until XS breakpoint
+@media (max-width:575px) {
+  #showcase {
+    display: none;
+  }
+}
+@media (min-width:576px) {
+  #showcase {
+    display: inline;
+  }
+}
+
+
 #showcase {
   position: relative;
   // Font size
   // font-size: 10px;
 
+  // 37x49
   // These are the arrows
   .carousel-control-prev-icon, .carousel-control-next-icon {
-    width: 37px !important;
-    height: 49px !important;
+    width: calc(1rem + 1vw) !important;
+    height: calc(1rem + 1vw) !important;
   }
   
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+}
+
+
   // These are the two dots
   .carousel-indicators li {
-    width: 0.75em;
-    height: 0.75em;
-    margin: 0.35em;
+    width: calc(0.1rem + 1vw) !important;
+    height: calc(0.1rem + 1vw) !important;
+    margin: 0.35rem;
     border-radius: 50%;
   }
 
-
+  // 1500 by 700 image size
 
   .carousel-image-1 {
-    background: url(../img/bright-office-9.png) 0% 0% / cover;
+    background: url(../img/bright-office.png) 0% 0% / cover;
   }
 
   .carousel-image-2 {
-   background: url(../img/wood-table-3.png) 0% 0% / cover;
+   background: url(../img/wood-table.png) 0% 0% / cover;
   }
   .carousel-image-3 {
     background: url(../img/sticky-notes.png) 0% 0% / cover;
   }
-
-
-  @media (min-width: 576px) {
-    .carousel-item {
-      height: 420px;
-    }
-    .carousel-caption {
-      top: 15% !important;
-    }
+  
+  // this is the height of the showcase that goes up under the navbar
+  .carousel-item {
+    height: 27rem;
   }
 
 
-  @media (min-width: 768px) {
-    .carousel-item {
-      height: 460px;
-    }
+  .carousel-item {
+    // This is basically moving the image and text down
     .carousel-caption {
-      top: 20% !important;
+      top: 28% !important;
+    }
+    .display-3 {
+      font-size: calc(3.5em + 1vw) !important;
+      line-height: calc(1.1em + 1vw) !important;
+      margin-bottom: 0rem !important;
+    }
+    p {
+      margin-bottom: 2.3rem;
     }
   }
 
-
-  @media (min-width: 992px) {
-    .carousel-item {
-      height: 530px;
-    }
-    .carousel-caption {
-      top: 25% !important;
-    }
-  }
-  @media (min-width: 1200px) {
-    .carousel-item {
-      height: 575px;
-    }
-    .carousel-caption {
-      top: 25% !important;
-    }
-  }
-  @media (min-width: 1400px) {
-    .carousel-item {
-      height: 700px;
-    }
-    .carousel-caption {
-      top: 26% !important;
-    }
-  }
+  // .carousel-item:nth-last-of-type(2) {
+  //   h1 {
+  //     line-height: calc(70px + 1vw) !important;
+  //   }
+  // }
 
 
-  .carousel-item:nth-of-type(1), .carousel-item:nth-of-type(3) {
-    .carousel-caption {
-      padding-bottom: 9em;
-      h1 {
-        font-size: 7em;
-        letter-spacing: 0.04em;
-        font-weight: 300;     
-        line-height: 1.56em;   
-      }
-      p {
-        font-size: 2.9em;
-        padding-bottom: 30px;
-        // padding-top: 12px;
-        letter-spacing: 0.04em;
-        font-weight: 300;        
-      }
-    }
-    .carousel-item:nth-of-type(2) {
-      .carousel-caption {
-        padding-bottom: 7em;
-        h1 {
-          font-size: 5.5em;
-          letter-spacing: 0.04em;
-          font-weight: 300;
-          line-height: 1.56em;
-        }
-        p {
-          font-size: 2.9em;
-          padding-bottom: 30px;
-          padding-top: 12px;
-          letter-spacing: 0.04em;
-          font-weight: 300;
-        }
-        h3 {
-          font-size: 3.2em;
-          padding-bottom: 10px;
-          letter-spacing: 0.04em;
-          font-weight: 300;
-        }       
-      }
-    }
-  }
+
+
+
+
+
+  // .carousel-item:nth-of-type(1), .carousel-item:nth-of-type(2) .carousel-item:nth-of-type(3) {
+  //   // This is basically moving the image and text down
+  //   .carousel-caption {
+  //     top: 27% !important;
+  //   }
+  //   .display-3 {
+  //     font-size: calc(3.5em + 1vw) !important;
+  //     line-height: calc(1.1em + 1vw) !important;
+  //     margin-bottom: 0rem !important;
+  //   }
+  //   p {
+  //     margin-bottom: 3rem;
+  //   }
+  // }
+
+  // .carousel-item:nth-of-type(2) {
+  //     h1 {
+  //       font-size: 5.5em;
+  //       letter-spacing: 0.04em;
+  //       font-weight: 300;
+  //       line-height: 1.56em;
+  //     }
+  //     p {
+  //       font-size: 2.9em;
+  //       padding-bottom: 30px;
+  //       padding-top: 12px;
+  //       letter-spacing: 0.04em;
+  //       font-weight: 300;
+  //     }
+  //     h3 {
+  //       font-size: 3.2em;
+  //       padding-bottom: 10px;
+  //       letter-spacing: 0.04em;
+  //       font-weight: 300;
+  //     }       
+  // }
 }
 
 #info {
@@ -335,12 +375,6 @@ p.lead {
   .container {
   padding: 2.8rem;
 
-
-  @media (max-width: 575px) {
-    .col-lg-6 {
-      padding-top: 50px;
-    }
-  }
   .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -354,52 +388,84 @@ p.lead {
       height: 100%;
     }
   }
+
   // Little push down to align with video
   .info-description {
     margin-top: 1rem;
-    padding-left: 4.4rem;
+    // padding-left: 4.4rem;
     text-align: left;
     }
   }
+  p {
+    text-align: left;
+  }
+
+
+  @media (max-width: 992px) {
+    .info-description {
+      padding-top: 1.8rem;
+      }
+    }
+    p {
+      text-align: justify;
+    }
 }
 
 // Section header for services and portfolio
 .section-header {
-  background-color: $primary-color;
-  color: $section-header-font-color;
+  background-color: $site-primary;
+  color: $darkbg-font;
   text-align: center;
 }
 
+
+
 #services {
   background-color: $section-bg-primary;
-  > .container {
-    padding-top: 7.5rem;
-    padding-bottom: 2.5rem;
-    padding-right: 10px;
-    padding-left: 10px;
-    .card {
-      margin-bottom: 3.8rem;
-      .icon-holder {
-        margin-top: -2.5rem;
-      }
-      .card-body.service-card h5 {
-        color: gray;
-      }
-    }
-    // you have to separate the pseudo class not cascade
-    // .card:hover {
-    //   background-color: $primary-color;
-    //   .service-title,
-    //   .card-text {
-    //     color: white;
-    //   }
-    //   .service-card h5 {
-    //     color: lightgrey;
-    //     // font-size: 1rem;
-    //   }
-    // }
+}
+
+#services > .container {
+  padding-top: 7.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width:576px) {
+  #services > .container {
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }
+
+@media (min-width:768px) {
+  #services > .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media (min-width:768px) {
+  #services > .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+
+
+
+
+
+.card {
+  margin-bottom: 3.8rem;
+  .icon-holder {
+    margin-top: -2.5rem;
+  }
+  .card-body.service-card h5 {
+    color: gray;
+  }
+}
+
+
+
 
 // #portfolio-header
 
@@ -429,7 +495,7 @@ p.lead {
         opacity: 0.3;
       }
       .card-img-overlay {
-        color: $primary-color;
+        color: $site-primary;
         .card-title {
           padding-top: 1.9rem;
         }
@@ -445,8 +511,9 @@ p.lead {
 
 // #testimonials
 
+// 1500 x 412
 #testimonials {
-  background: url(../img/pattern1.png), url(../img/bg-4.jpg);
+  background: url(../img/hazy-office.png) 0% 0% / cover;
 
   > .container {
     padding-top: 3.1rem;
@@ -502,7 +569,7 @@ p.lead {
       text-align: center;
     }
     .row:nth-of-type(1) {
-      margin-bottom: 8px;
+      margin-bottom: 0.7rem;
     }
     @media (max-width: 767px) {
       .row:nth-of-type(2) {
@@ -580,7 +647,7 @@ p.lead {
   
   
   p {
-    color: $footer-font-color;
+    color: $darkbg-font;
   }
   .icon-copyrights {
     a {
