@@ -188,9 +188,19 @@ p.lead {
         left: 0;
         width: 100%;
         height: 100%; }
-    #info .container .info-description {
-      margin-top: 1rem;
-      text-align: left; }
+    @media (max-width: 575px) {
+      #info .container .col-vid {
+        margin-top: 4rem; }
+      #info .container .info-description .info-section:nth-of-type(1) {
+        margin-top: 3rem; } }
+    @media (max-width: 991px) {
+      #info .container .info-description {
+        padding: unset;
+        text-align: left; } }
+  @media (min-width: 992px) {
+    #info .info-description {
+      padding-left: 4.4rem;
+      text-align: left; } }
   #info p {
     text-align: left; }
   @media (max-width: 992px) {
@@ -229,6 +239,9 @@ p.lead {
     margin-top: -2.5rem; }
   .card .card-body.service-card h5 {
     color: gray; }
+
+#services .img-fluid {
+  height: 2rem !important; }
 
 #portfolio {
   background-color: #fff; }
@@ -294,7 +307,7 @@ p.lead {
     padding-top: 6.3rem;
     padding-bottom: 6.3rem; } }
 #footer .bg-light {
-  background-color: #f0f0f0 !important; }
+  background-color: #e4e4e4 !important; }
 #footer > .container-fluid h4 {
   font-size: 1.7rem;
   text-transform: uppercase; }
