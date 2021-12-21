@@ -3115,11 +3115,7 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   padding: 1.25rem; }
 
-.card-title {
-  margin-bottom: 0.75rem; }
-
 .card-subtitle {
-  margin-top: -0.375rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -4143,7 +4139,7 @@ button.close {
 
 .carousel-fade .carousel-item {
   opacity: 0;
-  transition-duration: .6s;
+  transition-duration: 0.6s;
   transition-property: opacity; }
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
@@ -4184,7 +4180,7 @@ button.close {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    opacity: .9; }
+    opacity: 0.9; }
 
 .carousel-control-prev {
   left: 0; }
@@ -4235,7 +4231,7 @@ button.close {
       display: inline-block;
       width: 100%;
       height: 10px;
-      content: ""; }
+      content: ''; }
     .carousel-indicators li::after {
       position: absolute;
       bottom: -10px;
@@ -4243,7 +4239,7 @@ button.close {
       display: inline-block;
       width: 100%;
       height: 10px;
-      content: ""; }
+      content: ''; }
   .carousel-indicators .active {
     background-color: #fff; }
 
@@ -4253,8 +4249,6 @@ button.close {
   bottom: 20px;
   left: 15%;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #fff;
   text-align: center; }
 
