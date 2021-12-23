@@ -4,22 +4,19 @@ $lightbg-font: #212529;
 $darkbg-font: #fff;
 $nav-bg: #fcf9e8;
 $section-bg-primary: #fff;
-$section-bg-secondary: #f0f0f0;
+$section-bg-secondary: #e4e4e4;
 $footer-bg: #343a40;
 
 
-$base-font-size: calc(10px + 1vw);
-$base-line-height: calc(10px + 1vw);
-$base-font-weight: 300;
-$body-font-family: 'Open Sans Condensed', sans-serif !important;
 
 html {
-  font-size: $base-font-size;
+  font-size: calc(10px + 1vw);
 }
 
 body {
-  font-family: $body-font-family;
-  font-weight: $base-font-weight;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-weight: 300;
+  letter-spacing: calc(0.02px + 0.02vw);
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -39,6 +36,8 @@ h1.section-body {
   color: #8f9eac;
   line-height: calc(2.3rem + 1vw) !important;
 }
+
+// Make H1 centered when 1 column
 
 @media (max-width: 991px) {
   h1.section-body {
@@ -73,18 +72,12 @@ h5 {
   line-height: calc(1.1rem + 1vw) !important;
 }
 
+// the base line height only comes into play for P, maybe dont need
 
-p {
-  font-size: $base-font-size !important; 
-  font-size: $base-line-height !important; 
-}
 
 p.lead {
   font-weight: 300 !important;
 }
-
-
-
 
 #home {
  
@@ -130,22 +123,33 @@ p.lead {
     }
   
   }
-
-
-
   .btn-primary {
     color: #fff;
     background-color: $site-primary !important;
     border-color: $site-primary !important;
-    // Font Size
     font-size: 1rem;
   }
+  .btn-whatsapp {
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    background-color: #0F8C7E !important;
+    border-color: 0F8C7E !important;
+    font-size: 1rem;
+  }
+  .btn-email {
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+  }
+
+
+
+
+
+  
 }
 
 #main-nav {
-
-
-
   .navbar-brand {
     padding-top: unset !important;
     padding-bottom: unset !important;
@@ -263,7 +267,8 @@ p.lead {
     width: calc(1rem + 1vw) !important;
     height: calc(1rem + 1vw) !important;
   }
-  
+
+
   .carousel-control-prev, .carousel-control-next {
     position: absolute;
     top: 0;
@@ -303,13 +308,25 @@ p.lead {
   .carousel-item {
     height: 27rem;
   }
-
+// old setting
+  .carousel-item {
+    height: 27rem;
+  }
+  .carousel-item {
+    height: 22rem;
+  }
 
   .carousel-item {
     // This is basically moving the image and text down
+    // .carousel-caption {
+    //   top: 28% !important;
+    // }
+
     .carousel-caption {
-      top: 28% !important;
+      top: 37% !important;
     }
+
+
     .display-3 {
       font-size: calc(3.5em + 1vw) !important;
       line-height: calc(1.1em + 1vw) !important;
@@ -390,12 +407,33 @@ p.lead {
   }
 
   // Little push down to align with video
-  .info-description {
-    margin-top: 1rem;
-    // padding-left: 4.4rem;
-    text-align: left;
+
+  @media (max-width:575px) {
+    .col-vid {
+      margin-top: 4rem;
+    }
+    .info-description .info-section:nth-of-type(1) {
+      margin-top: 3rem;
     }
   }
+
+  @media (max-width:991px) {
+    .info-description {
+      // margin-top: 1rem;
+      padding: unset;
+      text-align: left;
+      }
+  }
+  }
+
+  @media (min-width: 992px) {
+    .info-description {
+      // margin-top: 1rem;
+      padding-left: 4.4rem;
+      text-align: left;
+      }
+  }
+
   p {
     text-align: left;
   }
@@ -463,7 +501,10 @@ p.lead {
     color: gray;
   }
 }
-
+// make icons responsive
+#services .img-fluid {
+  height: 2rem !important;
+}
 
 
 
@@ -514,20 +555,41 @@ p.lead {
 // 1500 x 412
 #testimonials {
   background: url(../img/hazy-office.png) 0% 0% / cover;
+  color: white;
 
   > .container {
-    padding-top: 3.1rem;
-    padding-bottom: 3.1rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  p {
+    font-size: calc(11px + 1vw) !important;
+    font-style: italic;
+  }
 
-    .owl-item {
-      color: white;
+  .testimonial-container {
+    .row:nth-of-type(2) {
       opacity: 0.7;
     }
-    .fa.fa-twitter {
-      font-size: 1.9rem;
-    }
-
   }
+
+  .testimonial-avatars {
+    margin-top: 0.5rem;
+  }
+
+  .testimonial-avatar-1 {
+    background: url(../img/dev-manager.png) 0% 0% / cover;
+    background-repeat: no-repeat;
+  }
+  .testimonial-avatar-2 {
+    background: url(../img/ray-w.png) 0% 0% / cover;
+    background-repeat: no-repeat;
+  }
+  .testimonial-avatar-3 {
+    background: url(../img/mark-letalien.jpeg) 0% 0% / cover;
+    background-repeat: no-repeat;
+  }
+
 }
 
 
@@ -653,6 +715,14 @@ p.lead {
     a {
       font-size: -10em;
       color: transparent;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  #contact .row:nth-of-type(2) {
+    .col-md-6:nth-of-type(2) {
+      margin-top: 1.5rem !important;
     }
   }
 }
